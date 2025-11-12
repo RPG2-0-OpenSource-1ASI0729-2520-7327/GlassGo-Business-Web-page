@@ -1,68 +1,6 @@
 // Navigation and Page Functionality for GlassGo
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Manejar el modal inicial de términos y condiciones
-    const initialModal = document.getElementById('initialTermsModal');
-    
-    // Mostrar el modal solo si los términos no han sido aceptados
-    if (!localStorage.getItem('termsAccepted')) {
-        initialModal.classList.add('show');
-        document.body.style.overflow = 'hidden';
-    }
-
-    // Manejar la aceptación de términos inicial
-    document.getElementById('acceptInitialTerms').addEventListener('click', function() {
-        localStorage.setItem('termsAccepted', 'true');
-        localStorage.setItem('termsAcceptedDate', new Date().toISOString());
-        initialModal.classList.remove('show');
-        document.body.style.overflow = '';
-        
-        // Mostrar mensaje de confirmación
-        const confirmationMessage = document.createElement('div');
-        confirmationMessage.className = 'terms-confirmation';
-        confirmationMessage.innerHTML = `
-            <div class="terms-confirmation-content">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="#10b981">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.41 7.41L7 13l1.41 1.41L12 10.83l3.59 3.58L17 13l-5-5z"/>
-                </svg>
-                <span data-i18n="notifications.terms_accepted">Términos y condiciones aceptados</span>
-            </div>
-        `;
-        document.body.appendChild(confirmationMessage);
-        
-        // Aplicar traducciones al nuevo elemento
-        window.i18n.applyTranslations(confirmationMessage);
-        
-        setTimeout(() => {
-            confirmationMessage.style.opacity = '0';
-            setTimeout(() => confirmationMessage.remove(), 300);
-        }, 3000);
-    });
-
-    // Manejar el rechazo de términos inicial
-    document.getElementById('declineInitialTerms').addEventListener('click', function() {
-        // Mostrar mensaje de error
-        const errorMessage = document.createElement('div');
-        errorMessage.className = 'terms-error';
-        errorMessage.innerHTML = `
-            <div class="terms-error-content">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="#e53e3e">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
-                </svg>
-                <span data-i18n="notifications.terms_rejected">Debes aceptar los términos y condiciones para continuar</span>
-            </div>
-        `;
-        document.body.appendChild(errorMessage);
-        
-        // Aplicar traducciones al nuevo elemento
-        window.i18n.applyTranslations(errorMessage);
-        
-        setTimeout(() => {
-            errorMessage.style.opacity = '0';
-            setTimeout(() => errorMessage.remove(), 300);
-        }, 3000);
-    });
-    
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('.nav-link');
     
@@ -945,6 +883,94 @@ const initTermsModal = () => {
 // Initialize Terms Modal
 if (document.querySelector('.terms-modal')) {
     initTermsModal();
+}
+
+// Initialize Contact Modal
+const initContactModal = () => {
+    const contactModal = document.getElementById('contactModal');
+    const contactBtn = document.getElementById('contactBtn');
+    const contactClose = document.getElementById('contactClose');
+    const contactForm = document.getElementById('contactModalForm');
+
+    if (!contactModal || !contactBtn || !contactClose) return;
+
+    // Open contact modal
+    contactBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        contactModal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Close contact modal
+    contactClose.addEventListener('click', function() {
+        contactModal.classList.remove('show');
+        document.body.style.overflow = '';
+    });
+
+    // Close modal when clicking outside
+    window.addEventListener('click', function(event) {
+        if (event.target === contactModal) {
+            contactModal.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Close modal with ESC key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && contactModal.classList.contains('show')) {
+            contactModal.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Handle contact form submission in modal
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(contactForm);
+            console.log('Contact form submitted:', Object.fromEntries(formData));
+            
+            // Show success message
+            const successMessage = document.createElement('div');
+            successMessage.className = 'modal-success-message';
+            successMessage.innerHTML = `
+                <div style="background: #10b981; color: white; padding: 1rem; border-radius: 8px; margin: 1rem 0; text-align: center;">
+                    <strong>¡Mensaje enviado con éxito!</strong><br>
+                    Te contactaremos pronto.
+                </div>
+            `;
+            
+            contactForm.parentNode.insertBefore(successMessage, contactForm);
+            contactForm.reset();
+            
+            setTimeout(() => {
+                successMessage.remove();
+                contactModal.classList.remove('show');
+                document.body.style.overflow = '';
+            }, 3000);
+        });
+    }
+
+    // Handle social links in contact modal
+    const modalSocialLinks = contactModal.querySelectorAll('.modal-social');
+    modalSocialLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const platform = link.classList[1];
+            console.log(`Contact modal ${platform} clicked`);
+            
+            // Add click effect
+            link.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                link.style.transform = 'scale(1)';
+            }, 150);
+        });
+    });
+};
+
+if (document.getElementById('contactModal')) {
+    initContactModal();
 }
 
 // Export functions for global use

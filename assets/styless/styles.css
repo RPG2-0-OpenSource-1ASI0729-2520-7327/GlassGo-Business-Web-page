@@ -2092,7 +2092,7 @@ body {
 
 .footer-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     gap: 4rem;
     margin-bottom: 2rem;
 }
@@ -2212,6 +2212,10 @@ body {
     gap: 0.5rem;
     position: relative;
     padding-left: 1.2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
 }
 
 .footer-link::before {
@@ -2229,27 +2233,28 @@ body {
 }
 
 .footer-link:hover::before {
-    color: white;
+    color: #4facfe;
     transform: translateX(3px);
 }
 
-/* Terms Icon Button */
-.terms-icon-button {
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.8);
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Footer button overrides for consistent styling */
+button.footer-link {
+    background: none !important;
+    border: none !important;
+    font-family: inherit;
+    font-size: 0.95rem !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: normal !important;
+    text-transform: none !important;
 }
 
-.terms-icon-button:hover {
-    color: white;
-    transform: scale(1.1);
+button.footer-link:hover {
+    color: white !important;
+}
+
+button.footer-link:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+    outline-offset: 2px;
 }
 
 /* Terms Modal */
@@ -2297,7 +2302,7 @@ body {
     top: 1rem;
     background: none;
     border: none;
-    font-size: 1.5rem;
+    font-size: 0.95rem;
     cursor: pointer;
     color: #666;
     width: 30px;
@@ -2481,7 +2486,32 @@ body {
             max-width: none;
             padding: 0.7rem 1rem;
         }
-    }/* Footer Bottom */
+    }
+
+/* Modal Contact Form */
+.modal-contact-form {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-contact-form h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #4a5568;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Inherit existing contact form styles but ensure they work in modal */
+.modal-contact-form .contact-form {
+    max-width: 100%;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+
+/* Footer Bottom */
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding: 1.5rem 0;
