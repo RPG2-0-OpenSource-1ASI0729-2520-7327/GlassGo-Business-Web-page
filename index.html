@@ -727,5 +727,57 @@
 
     <script src="assets/i18n/i18n.js"></script>
     <script src="assets/js/script.js"></script>
+    
+    <!-- i18n Auto-initialization Script -->
+    <script>
+        // Ensure i18n is properly initialized
+        document.addEventListener('DOMContentLoaded', function() {
+            // Wait a bit for the i18n system to fully load
+            setTimeout(() => {
+                if (window.i18n && window.i18n.translations) {
+                    console.log('✅ i18n System verification: OK');
+                    console.log('Current language:', window.i18n.getCurrentLanguage());
+                    console.log('Available translations keys:', Object.keys(window.i18n.translations));
+                    
+                    // Double-check translations are applied
+                    const untranslatedElements = document.querySelectorAll('[data-i18n]');
+                    let needsReapply = false;
+                    
+                    untranslatedElements.forEach(el => {
+                        const key = el.getAttribute('data-i18n');
+                        const translation = window.i18n.t(key);
+                        if (key === el.textContent.trim() || key === el.innerHTML.trim()) {
+                            needsReapply = true;
+                        }
+                    });
+                    
+                    if (needsReapply) {
+                        console.log('🔄 Re-applying translations...');
+                        window.i18n.applyTranslations();
+                    } else {
+                        console.log('✅ All translations properly applied');
+                    }
+                } else {
+                    console.warn('⚠️ i18n System not ready, retrying...');
+                    setTimeout(() => {
+                        if (window.i18n) {
+                            window.i18n.applyTranslations();
+                        }
+                    }, 500);
+                }
+            }, 300);
+        });
+        
+        // Also check when page is fully loaded
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                if (window.i18n && window.i18n.translations) {
+                    // Final check and application
+                    window.i18n.applyTranslations();
+                    console.log('🌐 Final i18n check complete');
+                }
+            }, 100);
+        });
+    </script>
 </body>
 </html>
