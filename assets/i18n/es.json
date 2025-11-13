@@ -1,0 +1,281 @@
+{
+  "meta": {
+    "title": "GlassGo - Software para transporte de vidrio",
+    "language": "es"
+  },
+  "notifications": {
+    "terms_accepted": "Términos y condiciones aceptados",
+    "terms_rejected": "Debes aceptar los términos y condiciones para continuar"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "benefits": "Beneficios",
+    "testimonials": "Testimonios",
+    "faq": "Preguntas",
+    "tutorials": "Tutoriales",
+    "contact": "Contacto",
+    "login": "Iniciar sesión",
+    "register": "Registrarse",
+    "team": "Equipo",
+    "about_team": "Sobre el equipo"
+  },
+  "hero": {
+    "title": "Software diseñado para trazabilidad y<br>prevención de pérdidas en transporte de vidrio",
+    "subtitle": "De la optimización de rutas a la detección de golpes, todo en una sola plataforma",
+    "btn_pricing": "Ver planes y precios",
+    "btn_demo": "Obtener una demostración →"
+  },
+  "about": {
+    "title": "Nosotros",
+    "subtitle": "Somos RPG, una plataforma tecnológica que transforma el transporte de licores en envases de vidrio con trazabilidad en tiempo real, optimización de rutas y sensores inteligentes para entregas seguras y eficientes",
+    "cards": {
+      "help": {
+        "title": "Como ayudamos",
+        "description": "Reducimos pérdidas, optimizamos rutas y garantizamos transparencia en cada envío con tecnología accesible que asegura entregas seguras y eficientes."
+      },
+      "value": {
+        "title": "Propuesta de valor",
+        "description": "Ofrecemos una solución única que une trazabilidad, prevención de roturas y accesibilidad, para que cada botella llegue segura a su destino y tu negocio gane en eficiencia y confianza."
+      },
+      "mission": {
+        "title": "Misión y visión",
+        "description": "Revolucionamos el transporte de vidrio con tecnología accesible, segura y eficiente, creando un nuevo estándar sin roturas y con total transparencia."
+      }
+    }
+  },
+  "team": {
+    "title": "Equipo de desarrollo",
+    "subtitle": "Conoce al equipo que construye GlassGo con tecnología, pasión y una mentalidad centrada en el cliente.",
+    "members": {
+      "1": {
+        "name": "Jarod Céspedes",
+        "career": "Ingeniero de Software"
+      },
+      "2": {
+        "name": "Guillermo Howard",
+        "career": "Ingeniero de Software"
+      },
+      "3": {
+        "name": "David Vivar",
+        "career": "Ingeniero de Software"
+      },
+      "4": {
+        "name": "Dylan Guillen",
+        "career": "Ingeniero de Software"
+      }
+    },
+    "about_video": {
+      "title": "Sobre el equipo",
+      "subtitle": "Video proximamente: Un vistazo a cómo trabajamos, nuestras prácticas de ingeniería y nuestra cultura.",
+      "badge": "Próximamente",
+      "cta": "Video disponible pronto",
+      "note": "Estamos preparando el video para nuestro canal de YouTube. ¡Vuelve pronto!"
+    }
+  },
+  "benefits": {
+    "title": "Beneficios",
+    "subtitle": "Toma el control de tu logística con tecnología que protege tu mercancía, mejora la eficiencia y garantiza transparencia en cada envío",
+    "transport": {
+      "title": "Empresas De Transporte De Camiones",
+      "items": {
+        "tracking": "Seguimiento en tiempo real de cada vehículo",
+        "alerts": "Alertas inmediatas por vibración o impacto en la carga",
+        "optimization": "Optimización de rutas para reducir tiempos y costos",
+        "reduction": "Reducción de pérdidas por roturas en tránsito",
+        "reports": "Reportes automáticos de desempeño de la flota"
+      }
+    },
+    "distributors": {
+      "title": "Distribuidores De Licores / Dueños De Negocios",
+      "items": {
+        "safe_delivery": "Entregas más seguras y con menor índice de roturas",
+        "transparency": "Transparencia en cada envío con trazabilidad digital",
+        "clear_reports": "Acceso a reportes claros sobre cada entrega",
+        "inventory_control": "Control de inventario en tránsito",
+        "cost_reduction": "Reducción de costos logísticos por pérdidas o devoluciones"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Testimonios",
+    "nav": {
+      "prev": "Testimonio anterior",
+      "next": "Siguiente testimonio"
+    },
+    "items": {
+      "maria": {
+        "name": "María T.",
+        "role": "Distribuidora",
+        "text": "Lo de trazabilidad completa nos dio tranquilidad. Nuestros clientes reciben sus pedidos íntegros y confiamos plenamente en cada entrego."
+      },
+      "carlos": {
+        "name": "Carlos M.",
+        "role": "Gerente de transportes",
+        "text": "Antes perdíamos demasiado tiempo y dinero por rutas ineficientes y roturas en el camino. Con esta plataforma ahora controlamos todo en tiempo real y nuestros costos se redujeron notablemente."
+      },
+      "jorge": {
+        "name": "Jorge R.",
+        "role": "Dueño de negocio",
+        "text": "Ahora sé exactamente dónde está mi mercancía y cuándo llega. He reducido pérdidas y gano más confianza con mis proveedores."
+      }
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Foro de preguntas con más frecuencia",
+    "btn_more": "Ver más",
+    "items": {
+      "what_is": {
+        "question": "¿Qué es GlassGo?",
+        "answer": "GlassGo es una plataforma integral de gestión logística especializada en el transporte seguro de vidrio y materiales frágiles. Ofrecemos seguimiento en tiempo real, optimización de rutas y control total de la cadena de suministro para garantizar entregas perfectas."
+      },
+      "cost": {
+        "question": "¿Cuánto cuesta usar el software?",
+        "answer": "Ofrecemos planes flexibles adaptados a diferentes necesidades empresariales. Desde $299/mes para pequeñas empresas hasta planes enterprise personalizados. Incluye prueba gratuita de 30 días y soporte técnico completo. Contacta con nuestro equipo para una cotización personalizada."
+      },
+      "accessible": {
+        "question": "¿Es accesible para pequeñas empresas?",
+        "answer": "Absolutamente. Hemos diseñado GlassGo pensando en empresas de todos los tamaños. Nuestro plan básico es perfecto para pequeñas empresas que buscan profesionalizar su logística sin grandes inversiones. Incluye todas las funciones esenciales y escalabilidad conforme creces."
+      },
+      "support": {
+        "question": "¿Qué tipo de soporte técnico ofrecen?",
+        "answer": "Proporcionamos soporte técnico 24/7 a través de chat en vivo, email y teléfono. Además, ofrecemos capacitación inicial gratuita, documentación completa, webinars mensuales y un gerente de cuenta dedicado para planes enterprise."
+      },
+      "security": {
+        "question": "¿Cómo garantizan la seguridad de los datos?",
+        "answer": "Utilizamos encriptación SSL de grado militar, servidores en la nube con certificación ISO 27001, copias de seguridad automáticas cada 6 horas y cumplimos con todas las normativas de protección de datos. Tu información está completamente segura con nosotros."
+      }
+    }
+  },
+  "tutorials": {
+    "title": "Tutoriales",
+    "subtitle": "Descubre cómo nuestra plataforma protege tus envíos y optimiza tu logística",
+    "items": {
+      "dashboard": {
+        "title": "Dashboard",
+        "description": "Visualiza el estado de tus envíos, rutas activas y estadísticas en tiempo real desde un panel intuitivo."
+      },
+      "tracking": {
+        "title": "Tracking",
+        "description": "Sigue la ubicación exacta de tus camiones con total trazabilidad y transparencia."
+      },
+      "reports": {
+        "title": "Reportes",
+        "description": "Genera reportes detallados, gráficos y estadísticas para optimizar tus operaciones."
+      },
+      "history": {
+        "title": "Historial",
+        "description": "Revisa el historial completo de entregas y datos anteriores para análisis y referencias."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "description": "Escríbenos y juntos impulsaremos tu negocio hacia un transporte sin roturas y con total control",
+    "form": {
+      "subtitle": "Tu opinión y tus necesidades son el punto de partida para crear soluciones efectivas.",
+      "name": "Nombre",
+      "email": "Email",
+      "phone": "Número",
+      "message": "Mensaje",
+      "submit": "Enviar",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado con éxito!<br>Te contactaremos pronto.",
+      "errors": {
+        "name": "El nombre debe tener al menos 2 caracteres",
+        "email": "Por favor ingresa un email válido",
+        "phone": "Por favor ingresa un número de teléfono válido",
+        "message": "El mensaje debe tener al menos 10 caracteres",
+        "general": "Error al enviar el mensaje. Por favor intenta de nuevo.",
+        "title": "Por favor corrige los siguientes errores:"
+      }
+    }
+  },
+  "footer": {
+    "description": "Estas son las características que diferencian nuestra solución: tecnología accesible, enfocada en tu negocio y lista para impulsar tu crecimiento.",
+    "social_title": "Redes Sociales",
+    "services_title": "Servicios",
+    "legal_title": "Información Legal",
+    "legal": {
+      "contact": "Contacto",
+      "terms": "Términos y Condiciones"
+    },
+    "services": {
+      "about": "Nosotros",
+      "benefits": "Beneficios",
+      "testimonials": "Testimonios",
+      "faq": "Preguntas",
+      "tutorials": "Tutorial",
+      "contact": "Contacto",
+      "download": "Descargar",
+      "terms": "Términos y Condiciones"
+    },
+    "copyright": "Todos los derechos reservados © 2025 GlassGo",
+    "terms": "Términos y Condiciones"
+  },
+  "terms": {
+    "title": "Términos y Condiciones",
+    "section1": {
+      "title": "1. Aceptación de los Términos",
+      "content": "Al acceder y utilizar los servicios de GlassGo, usted acepta estos términos y condiciones en su totalidad. Es importante que lea detenidamente este documento antes de utilizar nuestros servicios."
+    },
+    "section2": {
+      "title": "2. Descripción del Servicio",
+      "content": "GlassGo proporciona un software para la gestión y trazabilidad del transporte de vidrio. Nuestros servicios incluyen, pero no se limitan a:",
+      "list": [
+        "Seguimiento en tiempo real de envíos",
+        "Monitoreo de impactos y vibraciones",
+        "Optimización de rutas",
+        "Generación de reportes y análisis",
+        "Gestión de flotas y conductores"
+      ]
+    },
+    "section3": {
+      "title": "3. Responsabilidades del Usuario",
+      "content": "El usuario se compromete a:",
+      "list": [
+        "Proporcionar información precisa y actualizada",
+        "Mantener la confidencialidad de sus credenciales",
+        "Utilizar el servicio de manera ética y legal",
+        "Reportar cualquier uso no autorizado de su cuenta",
+        "Cumplir con todas las leyes y regulaciones aplicables"
+      ]
+    },
+    "section4": {
+      "title": "4. Privacidad y Protección de Datos",
+      "content": "Nos comprometemos a proteger su privacidad y datos personales. Nuestras prácticas incluyen:",
+      "list": [
+        "Encriptación de datos sensibles",
+        "Almacenamiento seguro en servidores protegidos",
+        "Acceso restringido a personal autorizado",
+        "Cumplimiento con regulaciones de protección de datos"
+      ]
+    },
+    "section5": {
+      "title": "5. Limitación de Responsabilidad",
+      "content": "GlassGo no será responsable por:",
+      "list": [
+        "Pérdidas no atribuibles directamente a nuestro incumplimiento",
+        "Daños indirectos o consecuentes",
+        "Interrupciones temporales del servicio por mantenimiento",
+        "Fuerza mayor o circunstancias fuera de nuestro control"
+      ]
+    },
+    "section6": {
+      "title": "6. Tarifas y Pagos",
+      "content": "Los detalles sobre precios, facturación y pagos se especifican en nuestros planes de suscripción. Nos reservamos el derecho de modificar las tarifas con previo aviso."
+    },
+    "section7": {
+      "title": "7. Cancelación y Terminación",
+      "content": "Puede cancelar su suscripción en cualquier momento. Nos reservamos el derecho de suspender o terminar el servicio en caso de violación de estos términos."
+    },
+    "legal_notice": "La información proporcionada en este documento es solo para fines informativos y no constituye asesoramiento legal. Para cualquier consulta específica, le recomendamos consultar con un profesional legal.",
+    "accept_button": "Aceptar Todo",
+    "decline_button": "No Aceptar"
+  },
+  "language": {
+    "current": "Español",
+    "selector_label": "Seleccionar idioma"
+  }
+}
