@@ -37,28 +37,44 @@ function initLanguageSelector() {
     const languageSelector = document.querySelector('.sidebar-language');
 
     if (languageSelector) {
-        languageSelector.addEventListener('click', function() {
+        // Set initial language text
+        const currentLang = localStorage.getItem('glassgo_language') || 'es';
+        const langText = languageSelector.querySelector('.language-text');
+        if (langText) {
+            langText.textContent = currentLang === 'es' ? 'Español' : 'English';
+        }
+
+        languageSelector.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+
             // Toggle between Spanish and English
             const currentLang = localStorage.getItem('glassgo_language') || 'es';
             const newLang = currentLang === 'es' ? 'en' : 'es';
 
             localStorage.setItem('glassgo_language', newLang);
 
-            // Update text
+            // Update text immediately
             const langText = this.querySelector('.language-text');
             if (langText) {
                 langText.textContent = newLang === 'es' ? 'Español' : 'English';
             }
 
-            // Reload translations if i18n is available
+            // Apply translations using i18n if available
             if (window.i18n) {
-                window.i18n.changeLanguage(newLang);
+                window.i18n.loadTranslations(newLang).then(() => {
+                    window.i18n.applyTranslations();
+                    showNotification(
+                        newLang === 'es' ? 'Idioma cambiado a Español' : 'Language changed to English',
+                        'success'
+                    );
+                });
+            } else {
+                showNotification(
+                    newLang === 'es' ? 'Idioma cambiado a Español' : 'Language changed to English',
+                    'success'
+                );
             }
-
-            showNotification(
-                newLang === 'es' ? 'Idioma cambiado a Español' : 'Language changed to English',
-                'success'
-            );
         });
     }
 }

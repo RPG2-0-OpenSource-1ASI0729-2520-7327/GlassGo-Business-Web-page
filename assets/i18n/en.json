@@ -15,7 +15,7 @@
     "faq": "FAQ",
     "tutorials": "Tutorials",
     "contact": "Contact",
-    "login": "Log In",
+    "login": "Sign In",
     "register": "Sign Up",
     "team": "Team",
     "about_team": "About the Team"
@@ -329,5 +329,98 @@
   "language": {
     "current": "English",
     "selector_label": "Select language"
+  },
+  "dashboard": {
+    "nav": {
+      "home": "Home",
+      "createOrder": "Create order",
+      "tracking": "Tracking",
+      "inventory": "Inventory",
+      "calendar": "Calendar",
+      "report": "Report",
+      "history": "History",
+      "claims": "Claims",
+      "settings": "Settings",
+      "logout": "Logout"
+    },
+    "home": {
+      "title": "Home",
+      "welcome": "Hello! Here's your trade summary for today.",
+      "stats": {
+        "activeOrders": "Active orders",
+        "stockAvailable": "Stock available",
+        "estimatedTime": "Estimated time",
+        "lossesAvoided": "Losses avoided"
+      },
+      "tracking": {
+        "title": "Tracking & Recent Orders",
+        "inTransit": "In transit",
+        "trackingNumber": "Tracking Number",
+        "orderLeaving": "The order is leaving for",
+        "seeMore": "See more"
+      },
+      "inventory": {
+        "title": "Inventory",
+        "status": "Status",
+        "orderLeaving": "The order is leaving for",
+        "seeMore": "see more"
+      },
+      "reports": {
+        "title": "Reports",
+        "viewReports": "View\nreports",
+        "seeMore": "see more"
+      },
+      "calendar": {
+        "title": "Calendar",
+        "orderNumber": "Order number",
+        "willArrive": "Your order will arrive this day.",
+        "seeMore": "see more"
+      },
+      "events": {
+        "title": "Events",
+        "newOrders": "New orders",
+        "newPath": "New path",
+        "people": "mil people"
+      },
+      "reportWidget": {
+        "title": "Report",
+        "subtitle": "Last 30 days of activity",
+        "newVisits": "New visits",
+        "newFollowers": "New followers",
+        "shareConnection": "share connection with..."
+      }
+    },
+    "tracking": {
+      "title": "Tracking",
+      "subtitle": "Track your trucks' routes with complete traceability and transparency.",
+      "search": "Enter the order tracking number",
+      "inTransit": "In transit",
+      "trackingNumber": "Tracking Number",
+      "orderLeaving": "The order is leaving for"
+    },
+    "createOrder": {
+      "title": "Create Order",
+      "subtitle": "Create a new shipping order quickly and easily."
+    },
+    "inventory": {
+      "title": "Inventory",
+      "subtitle": "Manage your product inventory and control stock."
+    },
+    "calendar": {
+      "title": "Calendar",
+      "subtitle": "View and schedule your order deliveries."
+    },
+    "report": {
+      "title": "Reports",
+      "subtitle": "Analyze performance, costs, and efficiency in easy-to-understand reports."
+    },
+    "history": {
+      "title": "History",
+      "subtitle": "Review the complete history of your operations."
+    },
+    "claims": {
+      "title": "Claims",
+      "subtitle": "Manage and track claims."
+    }
   }
 }

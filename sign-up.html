@@ -1,15 +1,20 @@
 ﻿<!DOCTYPE html>
+<!--
+    GlassGo - Sign Up Page
+    Description: New user registration page
+    Features: Registration form, user type selection, social auth options
+    Resources: i18n language support, user registration workflow
+-->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="auth.signup.title">Sign up - GlassGo</title>
     <link rel="icon" type="image/png" href="assets/images/logo.png">
-    <link rel="stylesheet" href="assets/styles/auth.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/sign.css">
 </head>
 <body>
-    <!-- Back to Home Button -->
+    <!-- Navigation: Return to homepage button -->
     <a href="index.html" class="back-to-home" aria-label="Back to home">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M19 12H5M12 19l-7-7 7-7"/>
@@ -17,13 +22,24 @@
     </a>
 
 
+    <!--
+        Authentication Container
+        Layout: Split screen - Registration Form (left) and Branding (right)
+     -->
     <div class="auth-container">
-        <!-- Left Side - Form -->
+        <!-- Left Panel: Registration Form -->
         <div class="auth-left">
             <div class="auth-form-wrapper">
                 <h1 class="auth-title" data-i18n="auth.signup.heading">Sign up</h1>
 
+                <!--
+                    Sign Up Form
+                    Fields: username, email, password, user type selection
+                    Features: Social authentication options (Google, Facebook, Apple)
+                    Actions: Submit registration, redirect to sign in
+                -->
                 <form class="auth-form" id="signupForm">
+                    <!-- Username input field -->
                     <div class="form-group">
                         <input
                             type="text"
@@ -65,28 +81,27 @@
                         </div>
                     </div>
 
+                    <!--
+                        User Type Selector
+                        Options: Business owners, Distributor, Transport companies
+                        Resource: Selected type stored for account setup
+                    -->
                     <div class="form-options">
                         <div class="user-type-selector">
                             <label class="radio-label">
-                                <input type="radio" name="userType" value="distributor" checked="checked">
+                                <input type="radio" name="userType" value="business" checked="checked">
+                                <span data-i18n="auth.signup.business">Business owners</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="userType" value="distributor" >
                                 <span data-i18n="auth.signup.distributor">Distributor</span>
                             </label>
                             <label class="radio-label">
                                 <input type="radio" name="userType" value="transport">
                                 <span data-i18n="auth.signup.transport">Transport companies</span>
                             </label>
-                            <label class="radio-label">
-                                <input type="radio" name="userType" value="business">
-                                <span data-i18n="auth.signup.business">Business owners</span>
-                            </label>
                         </div>
-
-                        <label class="checkbox-label">
-                            <input type="checkbox" id="rememberMe">
-                            <span data-i18n="auth.signup.remember">Remember Username</span>
-                        </label>
                     </div>
-
 
                     <button type="submit" class="btn-primary" data-i18n="auth.signup.submit">Sign UP</button>
 
@@ -122,64 +137,23 @@
         <div class="auth-right">
             <div class="brand-content">
                 <div class="brand-logo">
-                    <svg width="180" height="180" viewBox="0 0 180 180" fill="none">
-                        <!-- Truck -->
-                        <rect x="100" y="90" width="60" height="50" rx="4" fill="#003049"/>
-                        <rect x="110" y="100" width="40" height="30" fill="#669BBC"/>
-
-                        <!-- Bottle -->
-                        <ellipse cx="70" cy="50" rx="12" ry="8" fill="#003049"/>
-                        <rect x="62" y="50" width="16" height="45" rx="2" fill="#003049"/>
-                        <rect x="58" y="45" width="24" height="8" fill="#003049"/>
-
-                        <!-- Target/Crosshair -->
-                        <circle cx="70" cy="70" r="20" fill="#D62828" opacity="0.9"/>
-                        <circle cx="70" cy="70" r="6" fill="#fff"/>
-                        <line x1="70" y1="45" x2="70" y2="60" stroke="#fff" stroke-width="3"/>
-                        <line x1="70" y1="80" x2="70" y2="95" stroke="#fff" stroke-width="3"/>
-                        <line x1="45" y1="70" x2="60" y2="70" stroke="#fff" stroke-width="3"/>
-                        <line x1="80" y1="70" x2="95" y2="70" stroke="#fff" stroke-width="3"/>
-
-                        <!-- Wheels -->
-                        <circle cx="115" cy="145" r="8" fill="#003049"/>
-                        <circle cx="145" cy="145" r="8" fill="#003049"/>
-                        <circle cx="115" cy="145" r="4" fill="#778DA9"/>
-                        <circle cx="145" cy="145" r="4" fill="#778DA9"/>
-                    </svg>
+                    <img src="assets/images/logo.png" alt="GlassGo Logo" width="180" height="180">
                     <h2 class="brand-name">GlassGo</h2>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Success Modal -->
+    <!--
+        Success Modal
+        Purpose: Display successful registration confirmation
+        Features: Welcome message, branding, continue action
+        Resources: Success animation, welcome image
+    -->
     <div class="modal" id="successModal">
         <div class="modal-content success-modal">
             <div class="success-icon">
-                <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
-                    <!-- Truck -->
-                    <rect x="60" y="50" width="40" height="30" rx="3" fill="#003049"/>
-                    <rect x="65" y="55" width="30" height="20" fill="#669BBC"/>
-
-                    <!-- Bottle -->
-                    <ellipse cx="40" cy="35" rx="8" ry="5" fill="#003049"/>
-                    <rect x="35" y="35" width="10" height="28" rx="1" fill="#003049"/>
-                    <rect x="32" y="32" width="16" height="5" fill="#003049"/>
-
-                    <!-- Target/Crosshair -->
-                    <circle cx="40" cy="50" r="13" fill="#D62828" opacity="0.9"/>
-                    <circle cx="40" cy="50" r="4" fill="#fff"/>
-                    <line x1="40" y1="35" x2="40" y2="43" stroke="#fff" stroke-width="2"/>
-                    <line x1="40" y1="57" x2="40" y2="65" stroke="#fff" stroke-width="2"/>
-                    <line x1="25" y1="50" x2="33" y2="50" stroke="#fff" stroke-width="2"/>
-                    <line x1="47" y1="50" x2="55" y2="50" stroke="#fff" stroke-width="2"/>
-
-                    <!-- Wheels -->
-                    <circle cx="70" cy="82" r="5" fill="#003049"/>
-                    <circle cx="90" cy="82" r="5" fill="#003049"/>
-                    <circle cx="70" cy="82" r="2.5" fill="#778DA9"/>
-                    <circle cx="90" cy="82" r="2.5" fill="#778DA9"/>
-                </svg>
+                <img src="assets/images/logo.png" alt="GlassGo Logo" width="120" height="120">
             </div>
             <h2 class="brand-name">GlassGo</h2>
             <h3 class="success-title" data-i18n="auth.signup.successTitle">Successful Registration, Welcome!</h3>
@@ -189,7 +163,7 @@
     </div>
 
     <script src="assets/i18n/i18n.js"></script>
-    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/sign.js"></script>
 </body>
 </html>
 

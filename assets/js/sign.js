@@ -1,13 +1,12 @@
 ﻿/**
  * GlassGo Authentication JavaScript
  * @description Handles authentication functionality for Sign In, Sign Up, and Forgot Password
- * @version 1.0.0
+ * @version 2.0.0 - Cleaned version
  */
 
 (function() {
     'use strict';
 
-    // Wait for DOM to be fully loaded
     document.addEventListener('DOMContentLoaded', function() {
         initPasswordToggle();
         initForms();
@@ -49,26 +48,20 @@
      * Initialize form handlers
      */
     function initForms() {
-        // Sign In Form
         const signinForm = document.getElementById('signinForm');
         if (signinForm) {
             signinForm.addEventListener('submit', handleSignIn);
         }
 
-        // Sign Up Form
         const signupForm = document.getElementById('signupForm');
         if (signupForm) {
             signupForm.addEventListener('submit', handleSignUp);
         }
 
-        // Forgot Password Form
         const forgotForm = document.getElementById('forgotForm');
         if (forgotForm) {
             forgotForm.addEventListener('submit', handleForgotPassword);
         }
-
-        // Load remember username if exists
-        loadRememberedUsername();
     }
 
     /**
@@ -80,48 +73,30 @@
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
         const userType = document.querySelector('input[name="userType"]:checked').value;
-        const rememberMe = document.getElementById('rememberMe').checked;
 
-        // Validation
         if (!username || !password) {
             showNotification('Por favor completa todos los campos', 'error');
             return;
         }
 
-        // Save username if remember me is checked
-        if (rememberMe) {
-            localStorage.setItem('rememberedUsername', username);
-        } else {
-            localStorage.removeItem('rememberedUsername');
-        }
+        console.log('Sign In:', { username, userType });
 
-        // Simulate authentication (replace with actual API call)
-        console.log('Sign In:', { username, password, userType, rememberMe });
-
-        // Show loading state
         const submitButton = e.target.querySelector('button[type="submit"]');
         const originalText = submitButton.textContent;
         submitButton.textContent = 'Signing in...';
         submitButton.disabled = true;
 
-        // Simulate API call
         setTimeout(() => {
             showNotification('¡Inicio de sesión exitoso!', 'success');
             submitButton.textContent = originalText;
             submitButton.disabled = false;
 
-            // Save user info
             localStorage.setItem('glassgo_username', username);
             localStorage.setItem('glassgo_usertype', userType);
 
-            // Redirect based on user type
             setTimeout(() => {
                 if (userType === 'business') {
                     window.location.href = 'dueno-negocio/home.html';
-                } else if (userType === 'transport') {
-                    window.location.href = 'index.html'; // TODO: Create transport dashboard
-                } else if (userType === 'distributor') {
-                    window.location.href = 'index.html'; // TODO: Create distributor dashboard
                 } else {
                     window.location.href = 'index.html';
                 }
@@ -139,9 +114,7 @@
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
         const userType = document.querySelector('input[name="userType"]:checked').value;
-        const rememberMe = document.getElementById('rememberMe').checked;
 
-        // Validation
         if (!username || !email || !password) {
             showNotification('Por favor completa todos los campos', 'error');
             return;
@@ -157,26 +130,16 @@
             return;
         }
 
-        // Save username if remember me is checked
-        if (rememberMe) {
-            localStorage.setItem('rememberedUsername', username);
-        }
+        console.log('Sign Up:', { username, email, userType });
 
-        // Simulate registration (replace with actual API call)
-        console.log('Sign Up:', { username, email, password, userType, rememberMe });
-
-        // Show loading state
         const submitButton = e.target.querySelector('button[type="submit"]');
         const originalText = submitButton.textContent;
         submitButton.textContent = 'Registering...';
         submitButton.disabled = true;
 
-        // Simulate API call
         setTimeout(() => {
             submitButton.textContent = originalText;
             submitButton.disabled = false;
-
-            // Show success modal
             showSuccessModal();
         }, 1000);
     }
@@ -190,7 +153,6 @@
         const emailInput = document.getElementById('forgotEmail') || document.getElementById('email');
         const email = emailInput ? emailInput.value : '';
 
-        // Validation
         if (!email) {
             showNotification('Por favor ingresa tu email', 'error');
             return;
@@ -201,22 +163,17 @@
             return;
         }
 
-        // Simulate password reset request (replace with actual API call)
         console.log('Forgot Password:', { email });
 
-        // Show loading state
         const submitButton = e.target.querySelector('button[type="submit"]');
         const originalText = submitButton.textContent;
         submitButton.textContent = 'Sending...';
         submitButton.disabled = true;
 
-        // Simulate API call
         setTimeout(() => {
             showNotification('¡Correo de recuperación enviado! Revisa tu bandeja de entrada.', 'success');
             submitButton.textContent = originalText;
             submitButton.disabled = false;
-
-            // Clear form and close modal
             e.target.reset();
 
             const forgotPasswordModal = document.getElementById('forgotPasswordModal');
@@ -226,22 +183,6 @@
                 }, 1500);
             }
         }, 1000);
-    }
-
-    /**
-     * Load remembered username
-     */
-    function loadRememberedUsername() {
-        const rememberedUsername = localStorage.getItem('rememberedUsername');
-        const usernameInput = document.getElementById('username');
-        const rememberCheckbox = document.getElementById('rememberMe');
-
-        if (rememberedUsername && usernameInput) {
-            usernameInput.value = rememberedUsername;
-            if (rememberCheckbox) {
-                rememberCheckbox.checked = true;
-            }
-        }
     }
 
     /**
@@ -258,7 +199,6 @@
      * Initialize modal handlers
      */
     function initModal() {
-        // Success modal for sign up
         const modal = document.getElementById('successModal');
         const closeButton = document.getElementById('closeModal');
 
@@ -267,14 +207,12 @@
                 if (modal) {
                     modal.classList.remove('active');
                 }
-                // Redirect to sign in page
                 setTimeout(() => {
                     window.location.href = 'sign-in.html';
                 }, 300);
             });
         }
 
-        // Close modal on background click
         if (modal) {
             modal.addEventListener('click', function(e) {
                 if (e.target === modal) {
@@ -286,7 +224,6 @@
             });
         }
 
-        // Forgot password modal
         const forgotPasswordLink = document.getElementById('forgotPasswordLink');
         const forgotPasswordModal = document.getElementById('forgotPasswordModal');
         const closeForgotModal = document.getElementById('closeForgotModal');
@@ -304,7 +241,6 @@
             });
         }
 
-        // Close forgot password modal on background click
         if (forgotPasswordModal) {
             forgotPasswordModal.addEventListener('click', function(e) {
                 if (e.target === forgotPasswordModal) {
@@ -326,18 +262,15 @@
      * Show notification message
      */
     function showNotification(message, type = 'info') {
-        // Remove existing notification if any
         const existingNotification = document.querySelector('.auth-notification');
         if (existingNotification) {
             existingNotification.remove();
         }
 
-        // Create notification element
         const notification = document.createElement('div');
         notification.className = `auth-notification ${type}`;
         notification.textContent = message;
 
-        // Add styles
         Object.assign(notification.style, {
             position: 'fixed',
             top: '20px',
@@ -354,28 +287,15 @@
             maxWidth: '400px'
         });
 
-        // Add animation
         const style = document.createElement('style');
         style.textContent = `
             @keyframes slideInRight {
-                from {
-                    transform: translateX(100%);
-                    opacity: 0;
-                }
-                to {
-                    transform: translateX(0);
-                    opacity: 1;
-                }
+                from { transform: translateX(100%); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
             }
             @keyframes slideOutRight {
-                from {
-                    transform: translateX(0);
-                    opacity: 1;
-                }
-                to {
-                    transform: translateX(100%);
-                    opacity: 0;
-                }
+                from { transform: translateX(0); opacity: 1; }
+                to { transform: translateX(100%); opacity: 0; }
             }
         `;
 
@@ -386,38 +306,32 @@
 
         document.body.appendChild(notification);
 
-        // Remove notification after 4 seconds
         setTimeout(() => {
             notification.style.animation = 'slideOutRight 0.3s ease';
-            setTimeout(() => {
-                notification.remove();
-            }, 300);
+            setTimeout(() => notification.remove(), 300);
         }, 4000);
     }
 
     /**
-     * Social login handlers (placeholder - implement with actual OAuth)
+     * Social login handlers
      */
     document.addEventListener('click', function(e) {
         if (e.target.closest('.google-btn')) {
             e.preventDefault();
             showNotification('Inicio de sesión con Google - Próximamente', 'info');
             console.log('Google login clicked');
-            // Implement Google OAuth here
         }
 
         if (e.target.closest('.facebook-btn')) {
             e.preventDefault();
             showNotification('Inicio de sesión con Facebook - Próximamente', 'info');
             console.log('Facebook login clicked');
-            // Implement Facebook OAuth here
         }
 
         if (e.target.closest('.apple-btn')) {
             e.preventDefault();
             showNotification('Inicio de sesión con Apple - Próximamente', 'info');
             console.log('Apple login clicked');
-            // Implement Apple OAuth here
         }
     });
 

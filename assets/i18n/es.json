@@ -330,5 +330,98 @@
   "language": {
     "current": "Español",
     "selector_label": "Seleccionar idioma"
+  },
+  "dashboard": {
+    "nav": {
+      "home": "Inicio",
+      "createOrder": "Crear orden",
+      "tracking": "Rastreo",
+      "inventory": "Inventario",
+      "calendar": "Calendario",
+      "report": "Reportes",
+      "history": "Historial",
+      "claims": "Reclamos",
+      "settings": "Configuración",
+      "logout": "Cerrar sesión"
+    },
+    "home": {
+      "title": "Inicio",
+      "welcome": "¡Hola! Aquí está tu resumen comercial de hoy.",
+      "stats": {
+        "activeOrders": "Pedidos activos",
+        "stockAvailable": "Stock disponible",
+        "estimatedTime": "Tiempo estimado",
+        "lossesAvoided": "Pérdidas evitadas"
+      },
+      "tracking": {
+        "title": "Rastreo y Pedidos recientes",
+        "inTransit": "En tránsito",
+        "trackingNumber": "Número de rastreo",
+        "orderLeaving": "El pedido está saliendo hacia",
+        "seeMore": "Ver más"
+      },
+      "inventory": {
+        "title": "Inventario",
+        "status": "Estado",
+        "orderLeaving": "El pedido está saliendo hacia",
+        "seeMore": "Ver más"
+      },
+      "reports": {
+        "title": "Reportes",
+        "viewReports": "Ver\nreportes",
+        "seeMore": "Ver más"
+      },
+      "calendar": {
+        "title": "Calendario",
+        "orderNumber": "Orden número",
+        "willArrive": "Tu pedido llegará este día.",
+        "seeMore": "Ver más"
+      },
+      "events": {
+        "title": "Eventos",
+        "newOrders": "Nuevos pedidos",
+        "newPath": "Nueva ruta",
+        "people": "mil personas"
+      },
+      "reportWidget": {
+        "title": "Reporte",
+        "subtitle": "Últimos 30 días de actividad",
+        "newVisits": "Nuevas visitas",
+        "newFollowers": "Nuevos seguidores",
+        "shareConnection": "compartir conexión con..."
+      }
+    },
+    "tracking": {
+      "title": "Rastreo",
+      "subtitle": "Rastrea las rutas de tus camiones con total trazabilidad y transparencia.",
+      "search": "Ingrese el número de rastreo del pedido",
+      "inTransit": "En tránsito",
+      "trackingNumber": "Número de rastreo",
+      "orderLeaving": "El pedido está saliendo hacia"
+    },
+    "createOrder": {
+      "title": "Crear Orden",
+      "subtitle": "Crea una nueva orden de envío de manera rápida y sencilla."
+    },
+    "inventory": {
+      "title": "Inventario",
+      "subtitle": "Gestiona tu inventario de productos y controla el stock."
+    },
+    "calendar": {
+      "title": "Calendario",
+      "subtitle": "Visualiza y programa las entregas de tus pedidos."
+    },
+    "report": {
+      "title": "Reportes",
+      "subtitle": "Analiza el rendimiento, costos y eficiencia en reportes fáciles de entender."
+    },
+    "history": {
+      "title": "Historial",
+      "subtitle": "Revisa el historial completo de tus operaciones."
+    },
+    "claims": {
+      "title": "Reclamos",
+      "subtitle": "Gestiona y da seguimiento a los reclamos."
+    }
   }
 }
