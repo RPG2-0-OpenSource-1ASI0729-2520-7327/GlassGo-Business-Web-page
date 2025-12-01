@@ -1,0 +1,112 @@
+﻿/* Inventory Page Styles */
+
+.inventory-content {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.inventory-table thead {
+    background: #003049;
+    color: white;
+}
+
+.inventory-table th {
+    padding: 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.inventory-table tbody tr {
+    border-bottom: 1px solid #E8EDF2;
+    transition: background 0.2s ease;
+}
+
+.inventory-table tbody tr:hover {
+    background: #F5F7FA;
+}
+
+.inventory-table td {
+    padding: 16px;
+    color: #003049;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.status-badge.in-progress {
+    background: #FFF3CD;
+    color: #856404;
+}
+
+.status-badge.not-started {
+    background: #F8D7DA;
+    color: #721C24;
+}
+
+.status-badge.complete {
+    background: #D4EDDA;
+    color: #155724;
+}
+
+.tracking-number {
+    background: #003049;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .inventory-content {
+        padding: 16px;
+    }
+
+    .inventory-table {
+        font-size: 12px;
+    }
+
+    .inventory-table th,
+    .inventory-table td {
+        padding: 12px 8px;
+    }
+
+    .status-badge,
+    .tracking-number {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .table-container {
+        overflow-x: scroll;
+    }
+
+    .inventory-table {
+        min-width: 800px;
+    }
+}
+

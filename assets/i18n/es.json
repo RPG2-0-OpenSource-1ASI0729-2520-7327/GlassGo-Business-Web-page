@@ -64,13 +64,23 @@
         "name": "Dylan Guillen",
         "career": "Ingeniero de Software"
       }
+
     },
     "about_video": {
-      "title": "Sobre el equipo",
-      "subtitle": "Video proximamente: Un vistazo a cómo trabajamos, nuestras prácticas de ingeniería y nuestra cultura.",
+      "title": "Sobre el Equipo",
+      "subtitle": "Descubre cómo trabajamos, nuestras prácticas de ingeniería y nuestra cultura.",
       "badge": "Próximamente",
       "cta": "Video disponible pronto",
-      "note": "Estamos preparando el video para nuestro canal de YouTube. ¡Vuelve pronto!"
+      "note": "Estamos preparando el video en nuestro canal de YouTube. ¡Vuelve pronto!"
+    }
+  },
+  "product": {
+    "about_video": {
+      "title": "Sobre el Producto",
+      "subtitle": "Descubre cómo funciona nuestra plataforma y cómo puede transformar tu logística.",
+      "badge": "Próximamente",
+      "cta": "Video disponible pronto",
+      "note": "Estamos preparando el video en nuestro canal de YouTube. ¡Vuelve pronto!"
     }
   },
   "benefits": {
@@ -190,6 +200,49 @@
         "general": "Error al enviar el mensaje. Por favor intenta de nuevo.",
         "title": "Por favor corrige los siguientes errores:"
       }
+    }
+  },
+  "auth": {
+    "signin": {
+      "title": "Iniciar Sesión - GlassGo",
+      "heading": "Sign in",
+      "userPlaceholder": "Usuario",
+      "passwordPlaceholder": "Contraseña",
+      "distributor": "Distribuidor",
+      "transport": "Empresas de transporte",
+      "business": "Dueños de negocios",
+      "remember": "Recordar usuario",
+      "forgot": "¿Olvidaste tu contraseña?",
+      "submit": "Sign in",
+      "orSignIn": "O inicia sesión con",
+      "noAccount": "¿No tienes una cuenta?",
+      "signUpLink": "Regístrate"
+    },
+    "signup": {
+      "title": "Registrarse - GlassGo",
+      "heading": "Sign up",
+      "userPlaceholder": "Usuario",
+      "emailPlaceholder": "Correo electrónico",
+      "passwordPlaceholder": "Contraseña",
+      "distributor": "Distribuidor",
+      "transport": "Empresas de transporte",
+      "business": "Dueños de negocios",
+      "remember": "Recordar usuario",
+      "forgot": "¿Olvidaste tu contraseña?",
+      "submit": "Sign UP",
+      "orSignIn": "O regístrate con",
+      "successTitle": "Registro Exitoso, ¡Bienvenido!",
+      "continue": "Continuar",
+      "hasAccount": "¿Ya tienes una cuenta?",
+      "signInLink": "Inicia sesión"
+    },
+    "forgot": {
+      "title": "¿Olvidaste tu contraseña? - GlassGo",
+      "heading": "Forgot your password?",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "emailPlaceholder": "Correo electrónico",
+      "submit": "SEND",
+      "backToSignin": "Volver a iniciar sesión"
     }
   },
   "footer": {

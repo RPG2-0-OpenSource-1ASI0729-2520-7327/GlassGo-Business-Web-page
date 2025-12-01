@@ -5,779 +5,754 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="meta.title">GlassGo - Software para transporte de vidrio</title>
     <link rel="icon" type="image/png" href="assets/images/logo.png">
-    <link rel="stylesheet" href="assets/styless/styles.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header Navigation -->
-    <header class="header">
-        <div class="nav-container">
-            <!-- Logo section spanning both lines -->
-            <div class="nav-logo">
-                <img src="assets/images/logo.png" alt="GlassGo Logo" class="logo">
-                <span class="logo-text">GlassGo</span>
+<!-- Header Navigation -->
+<header class="header">
+    <div class="nav-container">
+        <!-- Logo section spanning both lines -->
+        <div class="nav-logo">
+            <img src="assets/images/logo.png" alt="GlassGo Logo" class="logo">
+            <span class="logo-text">GlassGo</span>
+        </div>
+
+        <!-- Right side content -->
+        <div class="nav-right">
+            <!-- Navigation and actions aligned with logo -->
+            <div class="nav-menu">
+                <a href="#inicio" class="nav-link active" data-i18n="navigation.home">Inicio</a>
+                <a href="#about" class="nav-link" data-i18n="navigation.about">Nosotros</a>
+                <a href="#benefits" class="nav-link" data-i18n="navigation.benefits">Beneficios</a>
+                <a href="#testimonials" class="nav-link" data-i18n="navigation.testimonials">Testimonios</a>
+                <a href="#faq" class="nav-link" data-i18n="navigation.faq">Preguntas</a>
+                <a href="#tutorials" class="nav-link" data-i18n="navigation.tutorials">Tutoriales</a>
             </div>
-            
-            <!-- Right side content -->
-            <div class="nav-right">
-                <!-- Navigation and actions aligned with logo -->
-                <div class="nav-menu">
-                    <a href="#inicio" class="nav-link active" data-i18n="navigation.home">Inicio</a>
-                    <a href="#nosotros" class="nav-link" data-i18n="navigation.about">Nosotros</a>
-                    <a href="#beneficios" class="nav-link" data-i18n="navigation.benefits">Beneficios</a>
-                    <a href="#testimonios" class="nav-link" data-i18n="navigation.testimonials">Testimonios</a>
-                    <a href="#preguntas" class="nav-link" data-i18n="navigation.faq">Preguntas</a>
-                    <a href="#tutoriales" class="nav-link" data-i18n="navigation.tutorials">Tutoriales</a>
-                </div>
-                
-                <div class="nav-actions">
-                    <button class="btn-login" data-i18n="navigation.login">Iniciar sesión</button>
-                    <button class="btn-register" data-i18n="navigation.register">Registrarse</button>
-                    <div class="language-selector" role="button" tabindex="0" aria-label="Language selector">
-                        <!-- Dynamic content will be inserted by i18n.js -->
-                    </div>
+
+            <div class="nav-actions">
+                <a href="sign-in.html" class="btn-login" data-i18n="navigation.login">Iniciar sesión</a>
+                <a href="sign-up.html" class="btn-register" data-i18n="navigation.register">Registrarse</a>
+                <div class="language-selector" role="button" tabindex="0" aria-label="Language selector">
+                    <!-- Dynamic content will be inserted by i18n.js -->
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <!-- Hero Section -->
-    <main class="hero" id="inicio">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title" data-i18n="hero.title" data-i18n-html="true">
-                    Software diseñado para trazabilidad y<br>
-                    prevención de pérdidas en transporte de vidrio
-                </h1>
-                
-                <div class="hero-buttons">
-                    <button class="btn-primary" data-i18n="hero.btn_pricing">Ver planes y precios</button>
-                    <button class="btn-secondary" data-i18n="hero.btn_demo">Obtener una demostración →</button>
+<!-- Hero Section -->
+<main class="hero" id="inicio">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="hero.title" data-i18n-html="true">
+                Software diseñado para trazabilidad y<br>
+                prevención de pérdidas en transporte de vidrio
+            </h1>
+
+            <div class="hero-buttons">
+                <button class="btn-primary" data-i18n="hero.btn_pricing">Ver planes y precios</button>
+                <button class="btn-secondary" data-i18n="hero.btn_demo">Obtener una demostración →</button>
+            </div>
+
+            <p class="hero-subtitle" data-i18n="hero.subtitle">
+                De la optimización de rutas a la detección de golpes, todo en una sola plataforma
+            </p>
+        </div>
+    </div>
+</main>
+
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="about-container">
+        <h2 class="about-title" data-i18n="about.title">Nosotros</h2>
+        <p class="about-subtitle" data-i18n="about.subtitle">
+            Somos RPG, una plataforma tecnológica que transforma el transporte de licores en envases de vidrio con trazabilidad en tiempo real, optimización de rutas y sensores inteligentes para entregas seguras y eficientes
+        </p>
+
+        <div class="about-cards">
+            <div class="about-card">
+                <div class="card-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="Como ayudamos" class="icon-img">
                 </div>
-                
-                <p class="hero-subtitle" data-i18n="hero.subtitle">
-                    De la optimización de rutas a la detección de golpes, todo en una sola plataforma
+                <h3 class="card-title" data-i18n="about.cards.help.title">Como ayudamos</h3>
+                <p class="card-description" data-i18n="about.cards.help.description">
+                    Reducimos pérdidas, optimizamos rutas y garantizamos transparencia en cada envío con tecnología accesible que asegura entregas seguras y eficientes.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <div class="card-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3281/3281289.png" alt="Propuesta de valor" class="icon-img">
+                </div>
+                <h3 class="card-title" data-i18n="about.cards.value.title">Propuesta de valor</h3>
+                <p class="card-description" data-i18n="about.cards.value.description">
+                    Ofrecemos una solución única que une trazabilidad, prevención de roturas y accesibilidad, para que cada botella llegue segura a su destino y tu negocio gane en eficiencia y confianza.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <div class="card-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="Misión y visión" class="icon-img">
+                </div>
+                <h3 class="card-title" data-i18n="about.cards.mission.title">Misión y visión</h3>
+                <p class="card-description" data-i18n="about.cards.mission.description">
+                    Revolucionamos el transporte de vidrio con tecnología accesible, segura y eficiente, creando un nuevo estándar sin roturas y con total transparencia.
                 </p>
             </div>
         </div>
-    </main>
+    </div>
+</section>
 
-    <!-- Nosotros Section -->
-    <section class="nosotros" id="nosotros">
-        <div class="nosotros-container">
-            <h2 class="nosotros-title" data-i18n="about.title">Nosotros</h2>
-            <p class="nosotros-subtitle" data-i18n="about.subtitle">
-                Somos RPG, una plataforma tecnológica que transforma el transporte de licores en envases de vidrio con trazabilidad en tiempo real, optimización de rutas y sensores inteligentes para entregas seguras y eficientes
-            </p>
-            
-            <div class="nosotros-cards">
-                <div class="nosotros-card">
-                    <div class="card-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="Como ayudamos" class="icon-img">
-                    </div>
-                    <h3 class="card-title" data-i18n="about.cards.help.title">Como ayudamos</h3>
-                    <p class="card-description" data-i18n="about.cards.help.description">
-                        Reducimos pérdidas, optimizamos rutas y garantizamos transparencia en cada envío con tecnología accesible que asegura entregas seguras y eficientes.
-                    </p>
+<!-- Development Team -->
+<section class="team" id="team">
+    <div class="team-container">
+        <h2 class="team-title" data-i18n="team.title">Development Team</h2>
+        <p class="team-subtitle" data-i18n="team.subtitle">
+            Conoce al equipo que está construyendo GlassGo con tecnología, pasión y foco en el cliente.
+        </p>
+
+        <div class="team-grid">
+            <!-- Miembro 1 -->
+            <article class="team-card">
+                <div class="team-avatar">
+                    <img src="assets/images/Jarod.jpg" alt="Nombre Apellido - Career" class="team-img" loading="lazy">
                 </div>
-                
-                <div class="nosotros-card">
-                    <div class="card-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/128/3281/3281289.png" alt="Propuesta de valor" class="icon-img">
-                    </div>
-                    <h3 class="card-title" data-i18n="about.cards.value.title">Propuesta de valor</h3>
-                    <p class="card-description" data-i18n="about.cards.value.description">
-                        Ofrecemos una solución única que une trazabilidad, prevención de roturas y accesibilidad, para que cada botella llegue segura a su destino y tu negocio gane en eficiencia y confianza.
-                    </p>
+                <h3 class="team-name" data-i18n="team.members.1.name">Ever Carlos</h3>
+                <p class="team-career" data-i18n="team.members.1.career">Engineer Software</p>
+                <div class="team-links">
+                    <a href="#" class="team-link" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://github.com/PruebaJJC" class="team-link" aria-label="GitHub">GitHub</a>
                 </div>
-                
-                <div class="nosotros-card">
-                    <div class="card-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="Misión y visión" class="icon-img">
-                    </div>
-                    <h3 class="card-title" data-i18n="about.cards.mission.title">Misión y visión</h3>
-                    <p class="card-description" data-i18n="about.cards.mission.description">
-                        Revolucionamos el transporte de vidrio con tecnología accesible, segura y eficiente, creando un nuevo estándar sin roturas y con total transparencia.
-                    </p>
+            </article>
+
+            <!-- Miembro 2 -->
+            <article class="team-card">
+                <div class="team-avatar">
+                    <img src="assets/images/Guillermo.jpg" alt="Nombre Apellido - Career" class="team-img" loading="lazy">
                 </div>
-            </div>
+                <h3 class="team-name" data-i18n="team.members.2.name">Guillermo Howard</h3>
+                <p class="team-career" data-i18n="team.members.2.career">Engineer Software</p>
+                <div class="team-links">
+                    <a href="#" class="team-link" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://github.com/GuillermoPromac" class="team-link" aria-label="GitHub">GitHub</a>
+                </div>
+            </article>
+
+            <!-- Miembro 3 -->
+            <article class="team-card">
+                <div class="team-avatar">
+                    <img src="assets/images/David.jpg" alt="Nombre Apellido - Career" class="team-img" loading="lazy">
+                </div>
+                <h3 class="team-name" data-i18n="team.members.3.name">David Vivar</h3>
+                <p class="team-career" data-i18n="team.members.3.career">Engineer Software</p>
+                <div class="team-links">
+                    <a href="#" class="team-link" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://github.com/DarkBeider20" class="team-link" aria-label="GitHub">GitHub</a>
+                </div>
+            </article>
+
+            <!-- Miembro 4 -->
+            <article class="team-card">
+                <div class="team-avatar">
+                    <img src="assets/images/Dylan.jpg" alt="Nombre Apellido - Career" class="team-img" loading="lazy">
+                </div>
+                <h3 class="team-name" data-i18n="team.members.4.name">Dylan Guillen</h3>
+                <p class="team-career" data-i18n="team.members.4.career">Engineer Software</p>
+                <div class="team-links">
+                    <a href="#" class="team-link" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://github.com/FulLHous" class="team-link" aria-label="GitHub">GitHub</a>
+                </div>
+            </article>
         </div>
-    </section>
+    </div>
+</section>
 
-        <!-- Development Team -->
-    <section class="equipo" id="equipo">
-        <div class="equipo-container">
-            <h2 class="equipo-title" data-i18n="team.title">Development Team</h2>
-            <p class="equipo-subtitle" data-i18n="team.subtitle">
-                Conoce al equipo que está construyendo GlassGo con tecnología, pasión y foco en el cliente.
-            </p>
+<!-- About the Team (Video Placeholder) -->
+<section class="about-team" id="about-team">
+    <div class="about-team-container">
+        <h2 class="about-team-title" data-i18n="team.about_video.title">About the Team</h2>
+        <p class="about-team-subtitle" data-i18n="team.about_video.subtitle">
+            Discover how we work, our engineering practices and our culture.
+        </p>
 
-            <div class="equipo-grid">
-                <!-- Miembro 1 -->
-                <article class="equipo-card">
-                    <div class="equipo-avatar">
-                        <img src="assets/images/Jarod.jpg" alt="Nombre Apellido - Career" class="equipo-img" loading="lazy">
-                    </div>
-                    <h3 class="equipo-name" data-i18n="team.members.1.name">Jarod Céspedes</h3>
-                    <p class="equipo-career" data-i18n="team.members.1.career">Engineer Software</p>
-                    <div class="equipo-links">
-                        <a href="#" class="equipo-link" aria-label="LinkedIn">LinkedIn</a>
-                        <a href="#" class="equipo-link" aria-label="GitHub">GitHub</a>
-                    </div>
-                </article>
-
-                <!-- Miembro 2 -->
-                <article class="equipo-card">
-                    <div class="equipo-avatar">
-                        <img src="assets/images/Guillermo.jpg" alt="Nombre Apellido - Career" class="equipo-img" loading="lazy">
-                    </div>
-                    <h3 class="equipo-name" data-i18n="team.members.2.name">Guillermo Howard</h3>
-                    <p class="equipo-career" data-i18n="team.members.2.career">Engineer Software</p>
-                    <div class="equipo-links">
-                        <a href="#" class="equipo-link" aria-label="LinkedIn">LinkedIn</a>
-                        <a href="#" class="equipo-link" aria-label="GitHub">GitHub</a>
-                    </div>
-                </article>
-
-                <!-- Miembro 3 -->
-                <article class="equipo-card">
-                    <div class="equipo-avatar">
-                        <img src="assets/images/David.jpg" alt="Nombre Apellido - Career" class="equipo-img" loading="lazy">
-                    </div>
-                    <h3 class="equipo-name" data-i18n="team.members.3.name">David Vivar</h3>
-                    <p class="equipo-career" data-i18n="team.members.3.career">Engineer Software</p>
-                    <div class="equipo-links">
-                        <a href="#" class="equipo-link" aria-label="LinkedIn">LinkedIn</a>
-                        <a href="#" class="equipo-link" aria-label="GitHub">GitHub</a>
-                    </div>
-                </article>
-
-                <!-- Miembro 4 -->
-                <article class="equipo-card">
-                    <div class="equipo-avatar">
-                        <img src="assets/images/Dylan.jpg" alt="Nombre Apellido - Career" class="equipo-img" loading="lazy">
-                    </div>
-                    <h3 class="equipo-name" data-i18n="team.members.4.name">Dylan Guillen</h3>
-                    <p class="equipo-career" data-i18n="team.members.4.career">Engineer Software</p>
-                    <div class="equipo-links">
-                        <a href="#" class="equipo-link" aria-label="LinkedIn">LinkedIn</a>
-                        <a href="#" class="equipo-link" aria-label="GitHub">GitHub</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- About the Team (Video Placeholder) -->
-    <section class="about-team" id="about-team">
-        <div class="about-team-container">
-            <h2 class="about-team-title" data-i18n="team.about_video.title">About the Team</h2>
-            <p class="about-team-subtitle" data-i18n="team.about_video.subtitle">
-                Próximamente: un vistazo a cómo trabajamos, nuestras prácticas de ingeniería y nuestra cultura.
-            </p>
-
-            <!-- Caja responsive 16:9 para incrustar YouTube después -->
-            <div class="video-shell" aria-label="Video del equipo (placeholder)">
-                <!-- Cuando tengas el video, reemplaza todo este div por un iframe de YouTube -->
-                <div class="video-placeholder">
-                    <div class="video-badge" data-i18n="team.about_video.badge">Coming soon</div>
-                    <button class="video-cta" type="button" disabled data-i18n="team.about_video.cta">
-                        Video disponible pronto
-                    </button>
-                </div>
-            </div>
-
-            <!-- Nota opcional -->
-            <p class="about-team-note" data-i18n="team.about_video.note">
-                Estamos preparando el video en nuestro canal de YouTube. ¡Vuelve pronto!
-            </p>
-        </div>
-    </section>
-
-
-    <!-- Beneficios Section -->
-    <section class="beneficios" id="beneficios">
-        <div class="beneficios-container">
-            <h2 class="beneficios-title" data-i18n="benefits.title">Beneficios</h2>
-            <p class="beneficios-subtitle" data-i18n="benefits.subtitle">
-                Toma el control de tu logística con tecnología que protege tu mercancía, mejora la eficiencia y garantiza transparencia en cada envío
-            </p>
-            
-            <!-- Empresas de Transporte -->
-            <div class="beneficio-category">
-                <h3 class="category-title" data-i18n="benefits.transport.title">Empresas De Transporte De Camiones</h3>
-                
-                <div class="beneficios-grid">
-                    <div class="beneficio-item">
-                        <div class="beneficio-icon">
-                            <img src="https://cdn-icons-png.flaticon.com/128/684/684908.png" alt="Seguimiento" class="icon-img">
-                        </div>
-                        <h4 class="beneficio-title" data-i18n="benefits.transport.items.tracking">Seguimiento en tiempo real de cada vehículo</h4>
-                    </div>
-                    
-                    <div class="beneficio-item">
-                        <div class="beneficio-icon">
-                            <img src="https://cdn-icons-png.flaticon.com/128/5141/5141534.png" alt="Alertas" class="icon-img">
-                        </div>
-                        <h4 class="beneficio-title" data-i18n="benefits.transport.items.alerts">Alertas inmediatas por vibración o impacto en la carga</h4>
-                    </div>
-                    
-                    <div class="beneficio-item">
-                        <div class="beneficio-icon">
-                            <img src="https://cdn-icons-png.flaticon.com/128/3281/3281307.png" alt="Optimización" class="icon-img">
-                        </div>
-                        <h4 class="beneficio-title" data-i18n="benefits.transport.items.optimization">Optimización de rutas para reducir tiempos y costos</h4>
-                    </div>
-                    
-                    <div class="beneficio-item">
-                        <div class="beneficio-icon">
-                            <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="Reducción" class="icon-img">
-                        </div>
-                        <h4 class="beneficio-title" data-i18n="benefits.transport.items.reduction">Reducción de pérdidas por roturas en tránsito</h4>
-                    </div>
-                    
-                    <div class="beneficio-item">
-                        <div class="beneficio-icon">
-                            <img src="https://cdn-icons-png.flaticon.com/128/3281/3281289.png" alt="Reportes" class="icon-img">
-                        </div>
-                        <h4 class="beneficio-title" data-i18n="benefits.transport.items.reports">Reportes automáticos de desempeño de la flota</h4>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Distribuidores de Licores -->
-            <div class="beneficio-category">
-                <h3 class="category-title" data-i18n="benefits.distributors.title">Distribuidores De Licores / Dueños De Negocios</h3>
-                
-                <div class="beneficios-grid">
-                    <div class="beneficio-item">
-                        <div class="beneficio-icon">
-                            <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="Entregas" class="icon-img">
-                        </div>
-                        <h4 class="beneficio-title" data-i18n="benefits.distributors.items.safe_delivery">Entregas más seguras y con menor índice de roturas</h4>
-                    </div>
-                    
-                    <div class="beneficio-item">
-                        <div class="beneficio-icon">
-                            <img src="https://cdn-icons-png.flaticon.com/128/1183/1183672.png" alt="Transparencia" class="icon-img">
-                        </div>
-                        <h4 class="beneficio-title" data-i18n="benefits.distributors.items.transparency">Transparencia en cada envío con trazabilidad digital</h4>
-                    </div>
-                    
-                    <div class="beneficio-item">
-                        <div class="beneficio-icon">
-                            <img src="https://cdn-icons-png.flaticon.com/128/3281/3281307.png" alt="Reportes" class="icon-img">
-                        </div>
-                        <h4 class="beneficio-title" data-i18n="benefits.distributors.items.clear_reports">Acceso a reportes claros sobre cada entrega</h4>
-                    </div>
-                    
-                    <div class="beneficio-item">
-                        <div class="beneficio-icon">
-                            <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="Control" class="icon-img">
-                        </div>
-                        <h4 class="beneficio-title" data-i18n="benefits.distributors.items.inventory_control">Control de inventario en tránsito</h4>
-                    </div>
-                    
-                    <div class="beneficio-item">
-                        <div class="beneficio-icon">
-                            <img src="https://cdn-icons-png.flaticon.com/128/3135/3135673.png" alt="Costos" class="icon-img">
-                        </div>
-                        <h4 class="beneficio-title" data-i18n="benefits.distributors.items.cost_reduction">Reducción de costos logísticos por pérdidas o devoluciones</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonios Section -->
-    <section class="testimonios" id="testimonios">
-        <div class="testimonios-container">
-            <h2 class="testimonios-title" data-i18n="testimonials.title">Testimonios</h2>
-            
-            <div class="testimonios-carousel">
-                <!-- Botones de navegación -->
-                <button class="carousel-nav prev" aria-label="Testimonio anterior" data-i18n="testimonials.nav.prev"></button>
-                <button class="carousel-nav next" aria-label="Siguiente testimonio" data-i18n="testimonials.nav.next"></button>
-                
-                <div class="testimonios-wrapper">
-                    <!-- Testimonio 1 - María T. -->
-                    <div class="testimonio-card active">
-                        <div class="testimonio-avatar">
-                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b1e5?w=150&h=150&fit=crop&crop=face" alt="María T." class="avatar-img">
-                        </div>
-                        <h3 class="testimonio-name" data-i18n="testimonials.items.maria.name">María T.</h3>
-                        <p class="testimonio-role" data-i18n="testimonials.items.maria.role">Distribuidora</p>
-                        <p class="testimonio-text" data-i18n="testimonials.items.maria.text">
-                            Lo de trazabilidad completa nos dio tranquilidad. Nuestros clientes reciben sus pedidos íntegros y confiamos plenamente en cada entrego.
-                        </p>
-                    </div>
-                    
-                    <!-- Testimonio 2 - Carlos M. -->
-                    <div class="testimonio-card">
-                        <div class="testimonio-avatar">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="Carlos M." class="avatar-img">
-                        </div>
-                        <h3 class="testimonio-name" data-i18n="testimonials.items.carlos.name">Carlos M.</h3>
-                        <p class="testimonio-role" data-i18n="testimonials.items.carlos.role">Gerente de transportes</p>
-                        <p class="testimonio-text" data-i18n="testimonials.items.carlos.text">
-                            Antes perdíamos demasiado tiempo y dinero por rutas ineficientes y roturas en el camino. Con esta plataforma ahora controlamos todo en tiempo real y nuestros costos se redujeron notablemente.
-                        </p>
-                    </div>
-                    
-                    <!-- Testimonio 3 - Jorge R. -->
-                    <div class="testimonio-card">
-                        <div class="testimonio-avatar">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Jorge R." class="avatar-img">
-                        </div>
-                        <h3 class="testimonio-name" data-i18n="testimonials.items.jorge.name">Jorge R.</h3>
-                        <p class="testimonio-role" data-i18n="testimonials.items.jorge.role">Dueño de negocio</p>
-                        <p class="testimonio-text" data-i18n="testimonials.items.jorge.text">
-                            Ahora sé exactamente dónde está mi mercancía y cuándo llega. He reducido pérdidas y gano más confianza con mis proveedores.
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Indicadores del carousel -->
-                <div class="carousel-indicators">
-                    <button class="indicator active" data-slide="0"></button>
-                    <button class="indicator" data-slide="1"></button>
-                    <button class="indicator" data-slide="2"></button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Preguntas Frecuentes Section -->
-    <section class="preguntas" id="preguntas">
-        <div class="preguntas-container">
-            <h2 class="preguntas-title" data-i18n="faq.title">Preguntas Frecuentes</h2>
-            <p class="preguntas-subtitle" data-i18n="faq.subtitle">Foro de preguntas con más frecuencia</p>
-            
-            <div class="faq-list">
-                <!-- Pregunta 1 -->
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span class="question-text" data-i18n="faq.items.what_is.question">¿Qué es GlassGo?</span>
-                        <span class="faq-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </button>
-                    <div class="faq-answer">
-                        <div class="faq-content">
-                            <p data-i18n="faq.items.what_is.answer">GlassGo es una plataforma integral de gestión logística especializada en el transporte seguro de vidrio y materiales frágiles. Ofrecemos seguimiento en tiempo real, optimización de rutas y control total de la cadena de suministro para garantizar entregas perfectas.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pregunta 2 -->
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span class="question-text" data-i18n="faq.items.cost.question">¿Cuánto cuesta usar el software?</span>
-                        <span class="faq-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </button>
-                    <div class="faq-answer">
-                        <div class="faq-content">
-                            <p data-i18n="faq.items.cost.answer">Ofrecemos planes flexibles adaptados a diferentes necesidades empresariales. Desde $299/mes para pequeñas empresas hasta planes enterprise personalizados. Incluye prueba gratuita de 30 días y soporte técnico completo. Contacta con nuestro equipo para una cotización personalizada.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pregunta 3 -->
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span class="question-text" data-i18n="faq.items.accessible.question">¿Es accesible para pequeñas empresas?</span>
-                        <span class="faq-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </button>
-                    <div class="faq-answer">
-                        <div class="faq-content">
-                            <p data-i18n="faq.items.accessible.answer">Absolutamente. Hemos diseñado GlassGo pensando en empresas de todos los tamaños. Nuestro plan básico es perfecto para pequeñas empresas que buscan profesionalizar su logística sin grandes inversiones. Incluye todas las funciones esenciales y escalabilidad conforme creces.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pregunta 4 -->
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span class="question-text" data-i18n="faq.items.support.question">¿Qué tipo de soporte técnico ofrecen?</span>
-                        <span class="faq-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </button>
-                    <div class="faq-answer">
-                        <div class="faq-content">
-                            <p data-i18n="faq.items.support.answer">Proporcionamos soporte técnico 24/7 a través de chat en vivo, email y teléfono. Además, ofrecemos capacitación inicial gratuita, documentación completa, webinars mensuales y un gerente de cuenta dedicado para planes enterprise.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pregunta 5 -->
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span class="question-text" data-i18n="faq.items.security.question">¿Cómo garantizan la seguridad de los datos?</span>
-                        <span class="faq-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </button>
-                    <div class="faq-answer">
-                        <div class="faq-content">
-                            <p data-i18n="faq.items.security.answer">Utilizamos encriptación SSL de grado militar, servidores en la nube con certificación ISO 27001, copias de seguridad automáticas cada 6 horas y cumplimos con todas las normativas de protección de datos. Tu información está completamente segura con nosotros.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="faq-footer">
-                <button class="btn-ver-mas">
-                    <span data-i18n="faq.btn_more">Ver más</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                        <path d="M7 13l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+        <!-- Responsive 16:9 box for YouTube embed later -->
+        <div class="video-shell" aria-label="Team video (placeholder)">
+            <!-- When you have the video, replace this div with a YouTube iframe -->
+            <div class="video-placeholder">
+                <div class="video-badge" data-i18n="team.about_video.badge">Coming soon</div>
+                <button class="video-cta" type="button" disabled data-i18n="team.about_video.cta">
+                    Video available soon
                 </button>
             </div>
         </div>
-    </section>
 
-    <!-- Tutoriales Section -->
-    <section class="tutorial" id="tutoriales">
-        <div class="tutorial-container">
-            <h2 class="tutorial-title" data-i18n="tutorials.title">Tutoriales</h2>
-            <p class="tutorial-subtitle" data-i18n="tutorials.subtitle">Descubre cómo nuestra plataforma protege tus envíos y optimiza tu logística</p>
-            
-            <div class="tutorial-grid">
-                <!-- Dashboard Tutorial -->
-                <div class="tutorial-card">
-                    <div class="tutorial-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=280&fit=crop" alt="Dashboard GlassGo" class="tutorial-img">
-                        <div class="play-overlay">
-                            <div class="play-button">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M8 5v14l11-7z" fill="currentColor"/>
-                                </svg>
-                            </div>
-                        </div>
+        <!-- Optional note -->
+        <p class="about-team-note" data-i18n="team.about_video.note">
+            We're preparing the video for our YouTube channel. Come back soon!
+        </p>
+    </div>
+</section>
+
+<!-- About the Product (Video Placeholder) -->
+<section class="about-product" id="about-product">
+    <div class="about-product-container">
+        <h2 class="about-product-title" data-i18n="product.about_video.title">About the Product</h2>
+        <p class="about-product-subtitle" data-i18n="product.about_video.subtitle">
+            Discover how our platform works and how it can transform your logistics.
+        </p>
+
+        <!-- Responsive 16:9 box for YouTube embed later -->
+        <div class="video-shell" aria-label="Product video (placeholder)">
+            <!-- When you have the video, replace this div with a YouTube iframe -->
+            <div class="video-placeholder">
+                <div class="video-badge" data-i18n="product.about_video.badge">Coming soon</div>
+                <button class="video-cta" type="button" disabled data-i18n="product.about_video.cta">
+                    Video available soon
+                </button>
+            </div>
+        </div>
+
+        <!-- Optional note -->
+        <p class="about-product-note" data-i18n="product.about_video.note">
+            We're preparing the video for our YouTube channel. Come back soon!
+        </p>
+    </div>
+</section>
+
+
+<!-- Beneficios Section -->
+<section class="benefits" id="benefits">
+    <div class="benefits-container">
+        <h2 class="benefits-title" data-i18n="benefits.title">Beneficios</h2>
+        <p class="benefits-subtitle" data-i18n="benefits.subtitle">
+            Toma el control de tu logística con tecnología que protege tu mercancía, mejora la eficiencia y garantiza transparencia en cada envío
+        </p>
+
+        <!-- Empresas de Transporte -->
+        <div class="benefit-category">
+            <h3 class="category-title" data-i18n="benefits.transport.title">Empresas De Transporte De Camiones</h3>
+
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/684/684908.png" alt="Seguimiento" class="icon-img">
                     </div>
-                    <div class="tutorial-content">
-                        <h3 class="tutorial-card-title" data-i18n="tutorials.items.dashboard.title">Dashboard</h3>
-                        <p class="tutorial-description" data-i18n="tutorials.items.dashboard.description">Visualiza el estado de tus envíos, rutas activas y estadísticas en tiempo real desde un panel intuitivo.</p>
-                    </div>
+                    <h4 class="benefit-title" data-i18n="benefits.transport.items.tracking">Seguimiento en tiempo real de cada vehículo</h4>
                 </div>
 
-                <!-- Tracking Tutorial -->
-                <div class="tutorial-card">
-                    <div class="tutorial-image">
-                        <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=400&h=280&fit=crop" alt="Sistema de Tracking" class="tutorial-img">
-                        <div class="play-overlay">
-                            <div class="play-button">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M8 5v14l11-7z" fill="currentColor"/>
-                                </svg>
-                            </div>
-                        </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/5141/5141534.png" alt="Alertas" class="icon-img">
                     </div>
-                    <div class="tutorial-content">
-                        <h3 class="tutorial-card-title" data-i18n="tutorials.items.tracking.title">Tracking</h3>
-                        <p class="tutorial-description" data-i18n="tutorials.items.tracking.description">Sigue la ubicación exacta de tus camiones con total trazabilidad y transparencia.</p>
-                    </div>
+                    <h4 class="benefit-title" data-i18n="benefits.transport.items.alerts">Alertas inmediatas por vibración o impacto en la carga</h4>
                 </div>
 
-                <!-- Reportes Tutorial -->
-                <div class="tutorial-card">
-                    <div class="tutorial-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=280&fit=crop" alt="Reportes y Analytics" class="tutorial-img">
-                        <div class="play-overlay">
-                            <div class="play-button">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M8 5v14l11-7z" fill="currentColor"/>
-                                </svg>
-                            </div>
-                        </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3281/3281307.png" alt="Optimización" class="icon-img">
                     </div>
-                    <div class="tutorial-content">
-                        <h3 class="tutorial-card-title" data-i18n="tutorials.items.reports.title">Reportes</h3>
-                        <p class="tutorial-description" data-i18n="tutorials.items.reports.description">Genera reportes detallados, gráficos y estadísticas para optimizar tus operaciones.</p>
-                    </div>
+                    <h4 class="benefit-title" data-i18n="benefits.transport.items.optimization">Optimización de rutas para reducir tiempos y costos</h4>
                 </div>
 
-                <!-- Historial Tutorial -->
-                <div class="tutorial-card">
-                    <div class="tutorial-image">
-                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=280&fit=crop" alt="Historial de Envíos" class="tutorial-img">
-                        <div class="play-overlay">
-                            <div class="play-button">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M8 5v14l11-7z" fill="currentColor"/>
-                                </svg>
-                            </div>
-                        </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="Reducción" class="icon-img">
                     </div>
-                    <div class="tutorial-content">
-                        <h3 class="tutorial-card-title" data-i18n="tutorials.items.history.title">Historial</h3>
-                        <p class="tutorial-description" data-i18n="tutorials.items.history.description">Revisa el historial completo de entregas y datos anteriores para análisis y referencias.</p>
+                    <h4 class="benefit-title" data-i18n="benefits.transport.items.reduction">Reducción de pérdidas por roturas en tránsito</h4>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3281/3281289.png" alt="Reportes" class="icon-img">
                     </div>
+                    <h4 class="benefit-title" data-i18n="benefits.transport.items.reports">Reportes automáticos de desempeño de la flota</h4>
                 </div>
             </div>
         </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <!-- Logo y descripción -->
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <img src="assets/images/logo-classGo.png" alt="GlassGo Logo" class="footer-logo-img">
-                        <span class="footer-logo-text">GlassGo</span>
+
+        <!-- Distribuidores de Licores -->
+        <div class="benefit-category">
+            <h3 class="category-title" data-i18n="benefits.distributors.title">Distribuidores De Licores / Dueños De Negocios</h3>
+
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="Entregas" class="icon-img">
                     </div>
-                    <p class="footer-description" data-i18n="footer.description">
-                        Estas son las características que diferencian nuestra solución: tecnología accesible, enfocada en tu negocio y lista para impulsar tu crecimiento.
+                    <h4 class="benefit-title" data-i18n="benefits.distributors.items.safe_delivery">Entregas más seguras y con menor índice de roturas</h4>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1183/1183672.png" alt="Transparencia" class="icon-img">
+                    </div>
+                    <h4 class="benefit-title" data-i18n="benefits.distributors.items.transparency">Transparencia en cada envío con trazabilidad digital</h4>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3281/3281307.png" alt="Reportes" class="icon-img">
+                    </div>
+                    <h4 class="benefit-title" data-i18n="benefits.distributors.items.clear_reports">Acceso a reportes claros sobre cada entrega</h4>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="Control" class="icon-img">
+                    </div>
+                    <h4 class="benefit-title" data-i18n="benefits.distributors.items.inventory_control">Control de inventario en tránsito</h4>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3135/3135673.png" alt="Costos" class="icon-img">
+                    </div>
+                    <h4 class="benefit-title" data-i18n="benefits.distributors.items.cost_reduction">Reducción de costos logísticos por pérdidas o devoluciones</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonios Section -->
+<section class="testimonials" id="testimonials">
+    <div class="testimonials-container">
+        <h2 class="testimonials-title" data-i18n="testimonials.title">Testimonios</h2>
+
+        <div class="testimonials-carousel">
+            <!-- Botones de navegación -->
+            <button class="carousel-nav prev" aria-label="Testimonio anterior" data-i18n="testimonials.nav.prev"></button>
+            <button class="carousel-nav next" aria-label="Siguiente testimonio" data-i18n="testimonials.nav.next"></button>
+
+            <div class="testimonials-wrapper">
+                <!-- Testimonio 1 - María T. -->
+                <div class="testimonial-card active">
+                    <div class="testimonial-avatar">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b1e5?w=150&h=150&fit=crop&crop=face" alt="María T." class="avatar-img">
+                    </div>
+                    <h3 class="testimonial-name" data-i18n="testimonials.items.maria.name">María T.</h3>
+                    <p class="testimonial-role" data-i18n="testimonials.items.maria.role">Distribuidora</p>
+                    <p class="testimonial-text" data-i18n="testimonials.items.maria.text">
+                        Lo de trazabilidad completa nos dio tranquilidad. Nuestros clientes reciben sus pedidos íntegros y confiamos plenamente en cada entrego.
                     </p>
-                    
-                    <!-- Redes Sociales -->
-                    <div class="footer-section">
-                        <h4 class="footer-section-title" data-i18n="footer.social_title">Redes Sociales</h4>
-                        <div class="footer-socials">
-                            <a href="#" class="footer-social facebook" aria-label="Facebook">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="footer-social instagram" aria-label="Instagram">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="footer-social twitter" aria-label="Twitter/X">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="footer-social whatsapp" aria-label="WhatsApp">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.064 3.488"/>
+                </div>
+
+                <!-- Testimonio 2 - Carlos M. -->
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="Carlos M." class="avatar-img">
+                    </div>
+                    <h3 class="testimonial-name" data-i18n="testimonials.items.carlos.name">Carlos M.</h3>
+                    <p class="testimonial-role" data-i18n="testimonials.items.carlos.role">Gerente de transportes</p>
+                    <p class="testimonial-text" data-i18n="testimonials.items.carlos.text">
+                        Antes perdíamos demasiado tiempo y dinero por rutas ineficientes y roturas en el camino. Con esta plataforma ahora controlamos todo en tiempo real y nuestros costos se redujeron notablemente.
+                    </p>
+                </div>
+
+                <!-- Testimonio 3 - Jorge R. -->
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Jorge R." class="avatar-img">
+                    </div>
+                    <h3 class="testimonial-name" data-i18n="testimonials.items.jorge.name">Jorge R.</h3>
+                    <p class="testimonial-role" data-i18n="testimonials.items.jorge.role">Dueño de negocio</p>
+                    <p class="testimonial-text" data-i18n="testimonials.items.jorge.text">
+                        Ahora sé exactamente dónde está mi mercancía y cuándo llega. He reducido pérdidas y gano más confianza con mis proveedores.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Indicadores del carousel -->
+            <div class="carousel-indicators">
+                <button class="indicator active" data-slide="0"></button>
+                <button class="indicator" data-slide="1"></button>
+                <button class="indicator" data-slide="2"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Preguntas Frecuentes Section -->
+<section class="faq" id="faq">
+    <div class="faq-container">
+        <h2 class="faq-title" data-i18n="faq.title">Preguntas Frecuentes</h2>
+        <p class="faq-subtitle" data-i18n="faq.subtitle">Foro de preguntas con más frecuencia</p>
+
+        <div class="faq-list">
+            <!-- Pregunta 1 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="question-text" data-i18n="faq.items.what_is.question">¿Qué es GlassGo?</span>
+                    <span class="faq-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            </a>
-                            <a href="#" class="footer-social gmail" aria-label="Gmail">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
-                                </svg>
-                            </a>
-                        </div>
+                        </span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-content">
+                        <p data-i18n="faq.items.what_is.answer">GlassGo es una plataforma integral de gestión logística especializada en el transporte seguro de vidrio y materiales frágiles. Ofrecemos seguimiento en tiempo real, optimización de rutas y control total de la cadena de suministro para garantizar entregas perfectas.</p>
                     </div>
-                </div>
-                
-                <!-- Servicios -->
-                <div class="footer-services">
-                    <h4 class="footer-section-title" data-i18n="footer.services_title">Servicios</h4>
-                    <ul class="footer-links">
-                        <li><a href="#nosotros" class="footer-link" data-i18n="footer.services.about">Nosotros</a></li>
-                        <li><a href="#beneficios" class="footer-link" data-i18n="footer.services.benefits">Beneficios</a></li>
-                        <li><a href="#testimonios" class="footer-link" data-i18n="footer.services.testimonials">Testimonios</a></li>
-                        <li><a href="#preguntas" class="footer-link" data-i18n="footer.services.faq">Preguntas</a></li>
-                        <li><a href="#tutoriales" class="footer-link" data-i18n="footer.services.tutorials">Tutorial</a></li>
-                    </ul>
-                </div>
-
-                <!-- Información Legal -->
-                <div class="footer-legal">
-                    <h4 class="footer-section-title" data-i18n="footer.legal_title">Información Legal</h4>
-                    <ul class="footer-links">
-                        <li><button id="contactBtn" class="footer-link" data-i18n="footer.legal.contact">Contacto</button></li>
-                        <li>
-                            <button id="termsBtn" class="footer-link" data-i18n="footer.legal.terms">
-                                Términos y Condiciones
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- Copyright -->
-            <div class="footer-bottom">
-                <div class="footer-copyright">
-                    <p data-i18n="footer.copyright">Todos los derechos reservados © 2025 GlassGo</p>
                 </div>
             </div>
 
-            <!-- Terms Modal -->
-            <div id="termsModal" class="terms-modal">
-                <div class="terms-modal-content">
-                    <button class="terms-close">&times;</button>
-                    <h2 data-i18n="terms.title">Términos y Condiciones</h2>
-                    <div class="terms-modal-body">
-                        <section>
-                            <h3 data-i18n="terms.section1.title">1. Aceptación de los Términos</h3>
-                            <p data-i18n="terms.section1.content">Al acceder y utilizar los servicios de GlassGo, usted acepta estos términos y condiciones en su totalidad. Es importante que lea detenidamente este documento antes de utilizar nuestros servicios.</p>
-                        </section>
-                        <section>
-                            <h3 data-i18n="terms.section2.title">2. Descripción del Servicio</h3>
-                            <p data-i18n="terms.section2.content">GlassGo proporciona un software para la gestión y trazabilidad del transporte de vidrio. Nuestros servicios incluyen, pero no se limitan a:</p>
-                            <ul>
-                                <li data-i18n="terms.section2.list.0">Seguimiento en tiempo real de envíos</li>
-                                <li data-i18n="terms.section2.list.1">Monitoreo de impactos y vibraciones</li>
-                                <li data-i18n="terms.section2.list.2">Optimización de rutas</li>
-                                <li data-i18n="terms.section2.list.3">Generación de reportes y análisis</li>
-                                <li data-i18n="terms.section2.list.4">Gestión de flotas y conductores</li>
-                            </ul>
-                        </section>
-                        <section>
-                            <h3 data-i18n="terms.section3.title">3. Responsabilidades del Usuario</h3>
-                            <p data-i18n="terms.section3.content">El usuario se compromete a:</p>
-                            <ul>
-                                <li data-i18n="terms.section3.list.0">Proporcionar información precisa y actualizada</li>
-                                <li data-i18n="terms.section3.list.1">Mantener la confidencialidad de sus credenciales</li>
-                                <li data-i18n="terms.section3.list.2">Utilizar el servicio de manera ética y legal</li>
-                                <li data-i18n="terms.section3.list.3">Reportar cualquier uso no autorizado de su cuenta</li>
-                                <li data-i18n="terms.section3.list.4">Cumplir con todas las leyes y regulaciones aplicables</li>
-                            </ul>
-                        </section>
-                        <section>
-                            <h3 data-i18n="terms.section4.title">4. Privacidad y Protección de Datos</h3>
-                            <p data-i18n="terms.section4.content">Nos comprometemos a proteger su privacidad y datos personales. Nuestras prácticas incluyen:</p>
-                            <ul>
-                                <li data-i18n="terms.section4.list.0">Encriptación de datos sensibles</li>
-                                <li data-i18n="terms.section4.list.1">Almacenamiento seguro en servidores protegidos</li>
-                                <li data-i18n="terms.section4.list.2">Acceso restringido a personal autorizado</li>
-                                <li data-i18n="terms.section4.list.3">Cumplimiento con regulaciones de protección de datos</li>
-                            </ul>
-                        </section>
-                        <section>
-                            <h3 data-i18n="terms.section5.title">5. Limitación de Responsabilidad</h3>
-                            <p data-i18n="terms.section5.content">GlassGo no será responsable por:</p>
-                            <ul>
-                                <li data-i18n="terms.section5.list.0">Pérdidas no atribuibles directamente a nuestro incumplimiento</li>
-                                <li data-i18n="terms.section5.list.1">Daños indirectos o consecuentes</li>
-                                <li data-i18n="terms.section5.list.2">Interrupciones temporales del servicio por mantenimiento</li>
-                                <li data-i18n="terms.section5.list.3">Fuerza mayor o circunstancias fuera de nuestro control</li>
-                            </ul>
-                        </section>
-                        <section>
-                            <h3 data-i18n="terms.section6.title">6. Tarifas y Pagos</h3>
-                            <p data-i18n="terms.section6.content">Los detalles sobre precios, facturación y pagos se especifican en nuestros planes de suscripción. Nos reservamos el derecho de modificar las tarifas con previo aviso.</p>
-                        </section>
-                        <section>
-                            <h3 data-i18n="terms.section7.title">7. Cancelación y Terminación</h3>
-                            <p data-i18n="terms.section7.content">Puede cancelar su suscripción en cualquier momento. Nos reservamos el derecho de suspender o terminar el servicio en caso de violación de estos términos.</p>
-                        </section>
-                        <section class="terms-legal-notice">
-                            <p data-i18n="terms.legal_notice">La información proporcionada en este documento es solo para fines informativos y no constituye asesoramiento legal. Para cualquier consulta específica, le recomendamos consultar con un profesional legal.</p>
-                        </section>
-                    </div>
-                    <div class="terms-modal-footer">
-                        <button id="acceptTermsBtn" class="accept-terms-btn" data-i18n="terms.accept_button">
-                            Aceptar Términos y Condiciones
-                        </button>
+            <!-- Pregunta 2 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="question-text" data-i18n="faq.items.cost.question">¿Cuánto cuesta usar el software?</span>
+                    <span class="faq-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-content">
+                        <p data-i18n="faq.items.cost.answer">Ofrecemos planes flexibles adaptados a diferentes necesidades empresariales. Desde $299/mes para pequeñas empresas hasta planes enterprise personalizados. Incluye prueba gratuita de 30 días y soporte técnico completo. Contacta con nuestro equipo para una cotización personalizada.</p>
                     </div>
                 </div>
             </div>
-            <!-- Contact Modal -->
-            <div id="contactModal" class="terms-modal">
-                <div class="terms-modal-content">
-                    <button class="terms-close" id="contactClose">&times;</button>
-                    <h2 data-i18n="contact.title">Contáctenos</h2>
-                    <div class="terms-modal-body">
-                        <p data-i18n="contact.description">
-                            Escríbenos y juntos impulsaremos tu negocio hacia un transporte sin roturas y con total control
-                        </p>
-                        
-                        <!-- Formulario de contacto -->
-                        <div class="modal-contact-form">
-                            <h3 data-i18n="contact.form.subtitle">Tu opinión y tus necesidades son el punto de partida para crear soluciones efectivas.</h3>
-                            
-                            <form class="contact-form" id="contactModalForm">
-                                <div class="form-group">
-                                    <input type="text" id="modalNombre" name="nombre" data-i18n="contact.form.name" placeholder="Nombre" required class="form-input">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <input type="email" id="modalEmail" name="email" data-i18n="contact.form.email" placeholder="Email" required class="form-input">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <input type="tel" id="modalNumero" name="numero" data-i18n="contact.form.phone" placeholder="Número" required class="form-input">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <textarea id="modalMensaje" name="mensaje" data-i18n="contact.form.message" placeholder="Mensaje" rows="4" required class="form-textarea"></textarea>
-                                </div>
-                                
-                                <button type="submit" class="btn-enviar" data-i18n="contact.form.submit">Enviar</button>
-                            </form>
-                        </div>
+
+            <!-- Pregunta 3 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="question-text" data-i18n="faq.items.accessible.question">¿Es accesible para pequeñas empresas?</span>
+                    <span class="faq-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-content">
+                        <p data-i18n="faq.items.accessible.answer">Absolutamente. Hemos diseñado GlassGo pensando en empresas de todos los tamaños. Nuestro plan básico es perfecto para pequeñas empresas que buscan profesionalizar su logística sin grandes inversiones. Incluye todas las funciones esenciales y escalabilidad conforme creces.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 4 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="question-text" data-i18n="faq.items.support.question">¿Qué tipo de soporte técnico ofrecen?</span>
+                    <span class="faq-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-content">
+                        <p data-i18n="faq.items.support.answer">Proporcionamos soporte técnico 24/7 a través de chat en vivo, email y teléfono. Además, ofrecemos capacitación inicial gratuita, documentación completa, webinars mensuales y un gerente de cuenta dedicado para planes enterprise.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 5 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="question-text" data-i18n="faq.items.security.question">¿Cómo garantizan la seguridad de los datos?</span>
+                    <span class="faq-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-content">
+                        <p data-i18n="faq.items.security.answer">Utilizamos encriptación SSL de grado militar, servidores en la nube con certificación ISO 27001, copias de seguridad automáticas cada 6 horas y cumplimos con todas las normativas de protección de datos. Tu información está completamente segura con nosotros.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
 
-    <script src="assets/i18n/i18n.js"></script>
-    <script src="assets/js/script.js"></script>
-    
-    <!-- i18n Auto-initialization Script -->
-    <script>
-        // Ensure i18n is properly initialized
-        document.addEventListener('DOMContentLoaded', function() {
-            // Wait a bit for the i18n system to fully load
-            setTimeout(() => {
-                if (window.i18n && window.i18n.translations) {
-                    console.log('✅ i18n System verification: OK');
-                    console.log('Current language:', window.i18n.getCurrentLanguage());
-                    console.log('Available translations keys:', Object.keys(window.i18n.translations));
-                    
-                    // Double-check translations are applied
-                    const untranslatedElements = document.querySelectorAll('[data-i18n]');
-                    let needsReapply = false;
-                    
-                    untranslatedElements.forEach(el => {
-                        const key = el.getAttribute('data-i18n');
-                        const translation = window.i18n.t(key);
-                        if (key === el.textContent.trim() || key === el.innerHTML.trim()) {
-                            needsReapply = true;
-                        }
-                    });
-                    
-                    if (needsReapply) {
-                        console.log('🔄 Re-applying translations...');
-                        window.i18n.applyTranslations();
-                    } else {
-                        console.log('✅ All translations properly applied');
-                    }
-                } else {
-                    console.warn('⚠️ i18n System not ready, retrying...');
-                    setTimeout(() => {
-                        if (window.i18n) {
-                            window.i18n.applyTranslations();
-                        }
-                    }, 500);
-                }
-            }, 300);
-        });
-        
-        // Also check when page is fully loaded
-        window.addEventListener('load', function() {
-            setTimeout(() => {
-                if (window.i18n && window.i18n.translations) {
-                    // Final check and application
-                    window.i18n.applyTranslations();
-                    console.log('🌐 Final i18n check complete');
-                }
-            }, 100);
-        });
-    </script>
+        <div class="faq-footer">
+            <button class="btn-ver-mas">
+                <span data-i18n="faq.btn_more">Ver más</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 13l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Tutoriales Section -->
+<section class="tutorial" id="tutorials">
+    <div class="tutorial-container">
+        <h2 class="tutorial-title" data-i18n="tutorials.title">Tutoriales</h2>
+        <p class="tutorial-subtitle" data-i18n="tutorials.subtitle">Descubre cómo nuestra plataforma protege tus envíos y optimiza tu logística</p>
+
+        <div class="tutorial-grid">
+            <!-- Dashboard Tutorial -->
+            <div class="tutorial-card">
+                <div class="tutorial-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=280&fit=crop" alt="Dashboard GlassGo" class="tutorial-img">
+                    <div class="play-overlay">
+                        <div class="play-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M8 5v14l11-7z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tutorial-content">
+                    <h3 class="tutorial-card-title" data-i18n="tutorials.items.dashboard.title">Dashboard</h3>
+                    <p class="tutorial-description" data-i18n="tutorials.items.dashboard.description">Visualiza el estado de tus envíos, rutas activas y estadísticas en tiempo real desde un panel intuitivo.</p>
+                </div>
+            </div>
+
+            <!-- Tracking Tutorial -->
+            <div class="tutorial-card">
+                <div class="tutorial-image">
+                    <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=400&h=280&fit=crop" alt="Sistema de Tracking" class="tutorial-img">
+                    <div class="play-overlay">
+                        <div class="play-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M8 5v14l11-7z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tutorial-content">
+                    <h3 class="tutorial-card-title" data-i18n="tutorials.items.tracking.title">Tracking</h3>
+                    <p class="tutorial-description" data-i18n="tutorials.items.tracking.description">Sigue la ubicación exacta de tus camiones con total trazabilidad y transparencia.</p>
+                </div>
+            </div>
+
+            <!-- Reportes Tutorial -->
+            <div class="tutorial-card">
+                <div class="tutorial-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=280&fit=crop" alt="Reportes y Analytics" class="tutorial-img">
+                    <div class="play-overlay">
+                        <div class="play-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M8 5v14l11-7z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tutorial-content">
+                    <h3 class="tutorial-card-title" data-i18n="tutorials.items.reports.title">Reportes</h3>
+                    <p class="tutorial-description" data-i18n="tutorials.items.reports.description">Genera reportes detallados, gráficos y estadísticas para optimizar tus operaciones.</p>
+                </div>
+            </div>
+
+            <!-- Historial Tutorial -->
+            <div class="tutorial-card">
+                <div class="tutorial-image">
+                    <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=280&fit=crop" alt="Historial de Envíos" class="tutorial-img">
+                    <div class="play-overlay">
+                        <div class="play-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M8 5v14l11-7z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tutorial-content">
+                    <h3 class="tutorial-card-title" data-i18n="tutorials.items.history.title">Historial</h3>
+                    <p class="tutorial-description" data-i18n="tutorials.items.history.description">Revisa el historial completo de entregas y datos anteriores para análisis y referencias.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <!-- Logo y descripción -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="GlassGo Logo" class="footer-logo-img">
+                    <span class="footer-logo-text">GlassGo</span>
+                </div>
+                <p class="footer-description" data-i18n="footer.description">
+                    Estas son las características que diferencian nuestra solución: tecnología accesible, enfocada en tu negocio y lista para impulsar tu crecimiento.
+                </p>
+
+                <!-- Redes Sociales -->
+                <div class="footer-section">
+                    <h4 class="footer-section-title" data-i18n="footer.social_title">Redes Sociales</h4>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social facebook" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social instagram" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social twitter" aria-label="Twitter/X">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social whatsapp" aria-label="WhatsApp">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.064 3.488"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social gmail" aria-label="Gmail">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicios -->
+            <div class="footer-services">
+                <h4 class="footer-section-title" data-i18n="footer.services_title">Servicios</h4>
+                <ul class="footer-links">
+                    <li><a href="#about" class="footer-link" data-i18n="footer.services.about">Nosotros</a></li>
+                    <li><a href="#benefits" class="footer-link" data-i18n="footer.services.benefits">Beneficios</a></li>
+                    <li><a href="#testimonials" class="footer-link" data-i18n="footer.services.testimonials">Testimonios</a></li>
+                    <li><a href="#faq" class="footer-link" data-i18n="footer.services.faq">Preguntas</a></li>
+                    <li><a href="#tutorials" class="footer-link" data-i18n="footer.services.tutorials">Tutorial</a></li>
+                </ul>
+            </div>
+
+            <!-- Información Legal -->
+            <div class="footer-legal">
+                <h4 class="footer-section-title" data-i18n="footer.legal_title">Información Legal</h4>
+                <ul class="footer-links">
+                    <li><button id="contactBtn" class="footer-link" data-i18n="footer.legal.contact">Contacto</button></li>
+                    <li>
+                        <button id="termsBtn" class="footer-link" data-i18n="footer.legal.terms">
+                            Términos y Condiciones
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p data-i18n="footer.copyright">Todos los derechos reservados © 2025 GlassGo</p>
+            </div>
+        </div>
+
+        <!-- Terms Modal -->
+        <div id="termsModal" class="terms-modal">
+            <div class="terms-modal-content">
+                <button class="terms-close">&times;</button>
+                <h2 data-i18n="terms.title">Términos y Condiciones</h2>
+                <div class="terms-modal-body">
+                    <section>
+                        <h3 data-i18n="terms.section1.title">1. Aceptación de los Términos</h3>
+                        <p data-i18n="terms.section1.content">Al acceder y utilizar los servicios de GlassGo, usted acepta estos términos y condiciones en su totalidad. Es importante que lea detenidamente este documento antes de utilizar nuestros servicios.</p>
+                    </section>
+                    <section>
+                        <h3 data-i18n="terms.section2.title">2. Descripción del Servicio</h3>
+                        <p data-i18n="terms.section2.content">GlassGo proporciona un software para la gestión y trazabilidad del transporte de vidrio. Nuestros servicios incluyen, pero no se limitan a:</p>
+                        <ul>
+                            <li data-i18n="terms.section2.list.0">Seguimiento en tiempo real de envíos</li>
+                            <li data-i18n="terms.section2.list.1">Monitoreo de impactos y vibraciones</li>
+                            <li data-i18n="terms.section2.list.2">Optimización de rutas</li>
+                            <li data-i18n="terms.section2.list.3">Generación de reportes y análisis</li>
+                            <li data-i18n="terms.section2.list.4">Gestión de flotas y conductores</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3 data-i18n="terms.section3.title">3. Responsabilidades del Usuario</h3>
+                        <p data-i18n="terms.section3.content">El usuario se compromete a:</p>
+                        <ul>
+                            <li data-i18n="terms.section3.list.0">Proporcionar información precisa y actualizada</li>
+                            <li data-i18n="terms.section3.list.1">Mantener la confidencialidad de sus credenciales</li>
+                            <li data-i18n="terms.section3.list.2">Utilizar el servicio de manera ética y legal</li>
+                            <li data-i18n="terms.section3.list.3">Reportar cualquier uso no autorizado de su cuenta</li>
+                            <li data-i18n="terms.section3.list.4">Cumplir con todas las leyes y regulaciones aplicables</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3 data-i18n="terms.section4.title">4. Privacidad y Protección de Datos</h3>
+                        <p data-i18n="terms.section4.content">Nos comprometemos a proteger su privacidad y datos personales. Nuestras prácticas incluyen:</p>
+                        <ul>
+                            <li data-i18n="terms.section4.list.0">Encriptación de datos sensibles</li>
+                            <li data-i18n="terms.section4.list.1">Almacenamiento seguro en servidores protegidos</li>
+                            <li data-i18n="terms.section4.list.2">Acceso restringido a personal autorizado</li>
+                            <li data-i18n="terms.section4.list.3">Cumplimiento con regulaciones de protección de datos</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3 data-i18n="terms.section5.title">5. Limitación de Responsabilidad</h3>
+                        <p data-i18n="terms.section5.content">GlassGo no será responsable por:</p>
+                        <ul>
+                            <li data-i18n="terms.section5.list.0">Pérdidas no atribuibles directamente a nuestro incumplimiento</li>
+                            <li data-i18n="terms.section5.list.1">Daños indirectos o consecuentes</li>
+                            <li data-i18n="terms.section5.list.2">Interrupciones temporales del servicio por mantenimiento</li>
+                            <li data-i18n="terms.section5.list.3">Fuerza mayor o circunstancias fuera de nuestro control</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3 data-i18n="terms.section6.title">6. Tarifas y Pagos</h3>
+                        <p data-i18n="terms.section6.content">Los detalles sobre precios, facturación y pagos se especifican en nuestros planes de suscripción. Nos reservamos el derecho de modificar las tarifas con previo aviso.</p>
+                    </section>
+                    <section>
+                        <h3 data-i18n="terms.section7.title">7. Cancelación y Terminación</h3>
+                        <p data-i18n="terms.section7.content">Puede cancelar su suscripción en cualquier momento. Nos reservamos el derecho de suspender o terminar el servicio en caso de violación de estos términos.</p>
+                    </section>
+                    <section class="terms-legal-notice">
+                        <p data-i18n="terms.legal_notice">La información proporcionada en este documento es solo para fines informativos y no constituye asesoramiento legal. Para cualquier consulta específica, le recomendamos consultar con un profesional legal.</p>
+                    </section>
+                </div>
+                <div class="terms-modal-footer">
+                    <button id="acceptTermsBtn" class="accept-terms-btn" data-i18n="terms.accept_button">
+                        Aceptar Términos y Condiciones
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Modal -->
+        <div id="contactModal" class="terms-modal">
+            <div class="terms-modal-content">
+                <button class="terms-close" id="contactClose">&times;</button>
+                <h2 data-i18n="contact.title">Contáctenos</h2>
+                <div class="terms-modal-body">
+                    <p data-i18n="contact.description">
+                        Escríbenos y juntos impulsaremos tu negocio hacia un transporte sin roturas y con total control
+                    </p>
+
+                    <!-- Formulario de contacto -->
+                    <div class="modal-contact-form">
+                        <h3 data-i18n="contact.form.subtitle">Tu opinión y tus necesidades son el punto de partida para crear soluciones efectivas.</h3>
+
+                        <form class="contact-form" id="contactModalForm">
+                            <div class="form-group">
+                                <input type="text" id="modalNombre" name="nombre" data-i18n="contact.form.name" placeholder="Nombre" required class="form-input">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="modalEmail" name="email" data-i18n="contact.form.email" placeholder="Email" required class="form-input">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="tel" id="modalNumero" name="numero" data-i18n="contact.form.phone" placeholder="Número" required class="form-input">
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="modalMensaje" name="mensaje" data-i18n="contact.form.message" placeholder="Mensaje" rows="4" required class="form-textarea"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-enviar" data-i18n="contact.form.submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/i18n/i18n.js"></script>
+<script src="assets/js/script.js"></script>
+
 </body>
 </html>
