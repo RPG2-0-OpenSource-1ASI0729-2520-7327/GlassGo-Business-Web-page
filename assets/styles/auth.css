@@ -1,0 +1,840 @@
+﻿/**
+ * GlassGo Authentication Pages Stylesheet
+ * @description Styles for Sign In, Sign Up, and Forgot Password pages
+ * @version 1.0.0
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    overflow-x: hidden;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+.back-to-home {
+    position: fixed;
+    top: 24px;
+    left: 24px;
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #003049;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.back-to-home:hover {
+    background: #003049;
+    color: #ffffff;
+    transform: translateX(-4px);
+    box-shadow: 0 6px 16px rgba(0, 48, 73, 0.2);
+}
+
+.back-to-home svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* ==========================================================================
+   Language Selector for Auth Pages
+   ========================================================================== */
+
+.language-selector-auth {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    background: #ffffff;
+    padding: 10px 16px;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    font-size: 14px;
+    font-weight: 500;
+    color: #003049;
+    position: relative;
+}
+
+.language-selector-auth:hover {
+    box-shadow: 0 6px 16px rgba(0, 48, 73, 0.2);
+    transform: translateY(-2px);
+}
+
+.language-selector-auth .language-current {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.language-selector-auth .language-text {
+    font-weight: 600;
+}
+
+.language-selector-auth .dropdown-arrow {
+    font-size: 0.7rem;
+    color: #718096;
+    transition: transform 0.3s ease;
+    margin-left: 4px;
+}
+
+.language-selector-auth.active .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.language-selector-auth .language-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+    min-width: 150px;
+}
+
+.language-selector-auth.active .language-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.language-selector-auth .language-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+    margin: 0.25rem;
+}
+
+.language-selector-auth .language-option:hover {
+    background: #f7fafc;
+}
+
+.language-selector-auth .language-option.active {
+    background: #e6f2ff;
+    color: #003049;
+    font-weight: 600;
+}
+
+.language-selector-auth .language-option .checkmark {
+    color: #003049;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   Auth Container
+   ========================================================================== */
+
+.auth-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.auth-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+}
+
+.auth-form-wrapper {
+    width: 100%;
+    max-width: 480px;
+}
+
+.auth-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+    letter-spacing: -0.5px;
+}
+
+/* Right Side - Branding */
+.auth-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #b8d4e8 0%, #8fb5d4 100%);
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+    padding: 40px;
+}
+
+.brand-content {
+    text-align: center;
+}
+
+.brand-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.brand-name {
+    font-size: 72px;
+    font-weight: 800;
+    color: #003049;
+    letter-spacing: -1px;
+}
+
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 16px;
+    border: 2px solid #e1e8ed;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-input::placeholder {
+    color: #9ca3af;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #003049;
+    box-shadow: 0 0 0 4px rgba(0, 48, 73, 0.1);
+}
+
+/* Password Input with Toggle */
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6b7280;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+
+.password-toggle:hover {
+    color: #003049;
+}
+
+.password-wrapper .form-input {
+    padding-right: 50px;
+}
+
+/* Form Options */
+.form-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* User Type Selector - Radio Buttons */
+.user-type-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1a1a1a;
+    user-select: none;
+}
+
+.radio-label input[type="radio"] {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2.5px solid #d1d5db;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.radio-label input[type="radio"]:checked {
+    border-color: #003049;
+    background-color: #ffffff;
+}
+
+.radio-label input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #003049;
+}
+
+.radio-label:hover input[type="radio"] {
+    border-color: #003049;
+}
+
+/* Remember Checkbox */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    color: #4b5563;
+    user-select: none;
+}
+
+.checkbox-label input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #d1d5db;
+    border-radius: 6px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.checkbox-label input[type="checkbox"]:checked {
+    background-color: #003049;
+    border-color: #003049;
+}
+
+.checkbox-label input[type="checkbox"]:checked::before {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Forgot Password Link */
+.forgot-link {
+    color: #1a1a1a;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: -8px;
+    display: inline-block;
+    transition: color 0.2s;
+}
+
+.forgot-link:hover {
+    color: #003049;
+}
+
+/* Auth Footer Text - Sign in/Sign up links */
+.auth-footer-text {
+    text-align: center;
+    font-size: 15px;
+    color: #6b7280;
+    margin-top: 16px;
+}
+
+.auth-link {
+    color: #003049;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 6px;
+    transition: color 0.2s;
+}
+
+.auth-link:hover {
+    color: #002438;
+    text-decoration: underline;
+}
+
+/* Primary Button */
+.btn-primary {
+    width: 100%;
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #003049;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+    background-color: #002438;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 48, 73, 0.2);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #6b7280;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.divider span {
+    padding: 0 16px;
+}
+
+/* Social Login Buttons */
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.social-btn img {
+    width: 28px;
+    height: 28px;
+}
+
+.apple-btn {
+    color: #000000;
+}
+
+.forgot-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8eef3 100%);
+}
+
+.forgot-content {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.forgot-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+}
+
+.forgot-description {
+    font-size: 16px;
+    color: #4b5563;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.forgot-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.back-link {
+    color: #003049;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: #002438;
+    text-decoration: underline;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #b8d4e8 0%, #95c1dc 100%);
+    padding: 60px 40px;
+    border-radius: 24px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.4s ease;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 32px;
+    font-weight: 300;
+    color: #003049;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    background: rgba(0, 48, 73, 0.1);
+    transform: rotate(90deg);
+}
+
+.forgot-modal {
+    max-width: 500px;
+    padding: 50px 40px;
+}
+
+.forgot-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #003049;
+    margin-bottom: 16px;
+}
+
+.forgot-description {
+    font-size: 16px;
+    color: #1a1a1a;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.forgot-form {
+    text-align: left;
+}
+
+.forgot-form .form-group {
+    margin-bottom: 24px;
+}
+
+.forgot-form .btn-primary {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.success-icon {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.success-modal .brand-name {
+    font-size: 64px;
+    font-weight: 800;
+    color: #003049;
+    margin-bottom: 16px;
+}
+
+.success-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 32px;
+}
+
+.welcome-image {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 32px;
+    display: block;
+}
+
+.modal-content .btn-primary {
+    max-width: 240px;
+    margin: 0 auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .auth-right {
+        clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .brand-name {
+        font-size: 60px;
+    }
+
+    .auth-title {
+        font-size: 42px;
+    }
+}
+
+/* Mobile Landscape and smaller tablets */
+@media (max-width: 768px) {
+    .auth-container {
+        flex-direction: column;
+    }
+
+    .auth-right {
+        clip-path: none;
+        min-height: 200px;
+        padding: 30px 20px;
+    }
+
+    .brand-name {
+        font-size: 48px;
+    }
+
+    .auth-title {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .user-type-selector {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .forgot-title {
+        font-size: 36px;
+    }
+
+    .success-modal .brand-name {
+        font-size: 48px;
+    }
+
+    .success-title {
+        font-size: 24px;
+    }
+
+    .modal-content {
+        padding: 40px 30px;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .back-to-home {
+        top: 16px;
+        left: 16px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .back-to-home svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .language-selector-auth {
+        top: 16px;
+        right: 16px;
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .language-selector-auth .flag {
+        font-size: 18px;
+    }
+
+    .auth-left {
+        padding: 30px 16px;
+    }
+
+    .auth-title {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .brand-name {
+        font-size: 36px;
+    }
+
+    .form-input {
+        padding: 14px 16px;
+        font-size: 15px;
+    }
+
+    .btn-primary {
+        padding: 14px 20px;
+        font-size: 15px;
+    }
+
+    .social-btn {
+        width: 48px;
+        height: 48px;
+    }
+
+    .social-btn img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .forgot-title {
+        font-size: 28px;
+    }
+
+    .forgot-description {
+        font-size: 15px;
+    }
+
+    .success-title {
+        font-size: 20px;
+    }
+
+    .modal-content {
+        padding: 30px 20px;
+    }
+
+    .welcome-image {
+        max-width: 150px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+    .auth-title {
+        font-size: 28px;
+    }
+
+    .brand-name {
+        font-size: 32px;
+    }
+
+    .user-type-selector {
+        gap: 10px;
+    }
+
+    .radio-label,
+    .checkbox-label {
+        font-size: 14px;
+    }
+}

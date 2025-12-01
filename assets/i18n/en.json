@@ -67,10 +67,19 @@
     },
     "about_video": {
       "title": "About the Team",
-      "subtitle": "Coming soon: a look at how we work, our engineering practices, and our culture.",
+      "subtitle": "Discover how we work, our engineering practices and our culture.",
       "badge": "Coming soon",
       "cta": "Video available soon",
-      "note": "We are preparing the video for our YouTube channel. Check back soon!"
+      "note": "We're preparing the video for our YouTube channel. Come back soon!"
+    }
+  },
+  "product": {
+    "about_video": {
+      "title": "About the Product",
+      "subtitle": "Discover how our platform works and how it can transform your logistics.",
+      "badge": "Coming soon",
+      "cta": "Video available soon",
+      "note": "We're preparing the video for our YouTube channel. Come back soon!"
     }
   },
   "benefits": {
@@ -192,6 +201,49 @@
       }
     }
   },
+  "auth": {
+    "signin": {
+      "title": "Sign in - GlassGo",
+      "heading": "Sign in",
+      "userPlaceholder": "User",
+      "passwordPlaceholder": "Password",
+      "distributor": "Distributor",
+      "transport": "Transport companies",
+      "business": "Business owners",
+      "remember": "Remember Username",
+      "forgot": "Forgot your password?",
+      "submit": "Sign in",
+      "orSignIn": "Or sign in with",
+      "noAccount": "Don't have an account?",
+      "signUpLink": "Sign up"
+    },
+    "signup": {
+      "title": "Sign up - GlassGo",
+      "heading": "Sign up",
+      "userPlaceholder": "User",
+      "emailPlaceholder": "E-mail",
+      "passwordPlaceholder": "Password",
+      "distributor": "Distributor",
+      "transport": "Transport companies",
+      "business": "Business owners",
+      "remember": "Remember Username",
+      "forgot": "Forgot your password?",
+      "submit": "Sign UP",
+      "orSignIn": "Or sign in with",
+      "successTitle": "Successful Registration, Welcome!",
+      "continue": "Continue",
+      "hasAccount": "Already have an account?",
+      "signInLink": "Sign in"
+    },
+    "forgot": {
+      "title": "Forgot your password? - GlassGo",
+      "heading": "Forgot your password?",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "emailPlaceholder": "E-mail",
+      "submit": "SEND",
+      "backToSignin": "Back to Sign in"
+    }
+  },
   "footer": {
     "description": "These are the features that set our solution apart: accessible technology, focused on your business and ready to drive your growth.",
     "social_title": "Social Media",
@@ -200,7 +252,7 @@
     "legal": {
       "contact": "Contact",
       "terms": "Terms and Conditions"
-    }, 
+    },
     "services": {
       "about": "About Us",
       "benefits": "Benefits",
@@ -270,7 +322,7 @@
       "title": "7. Cancellation and Termination",
       "content": "You may cancel your subscription at any time. We reserve the right to suspend or terminate the service in case of violation of these terms."
     },
-    "legal_notice": "The information provided in this document is for informational purposes only and does not constitute legal advice. For any specific inquiries, we recommend consulting with a legal professional.", 
+    "legal_notice": "The information provided in this document is for informational purposes only and does not constitute legal advice. For any specific inquiries, we recommend consulting with a legal professional.",
     "accept_button": "Accept All",
     "decline_button": "Do Not Accept"
   },
