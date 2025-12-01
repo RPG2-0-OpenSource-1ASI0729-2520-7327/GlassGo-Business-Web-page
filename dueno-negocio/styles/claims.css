@@ -1,0 +1,266 @@
+﻿/* Claims Page Styles */
+
+.claims-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.claims-form-section {
+    background: white;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.claim-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 14px 16px;
+    border: 2px solid #E8EDF2;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: #003049;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0066FF;
+    background: #F0F7FF;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #C4CDD5;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-submit {
+    padding: 14px 32px;
+    background: #003049;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.btn-submit:hover {
+    background: #004D73;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 48, 73, 0.3);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+.claims-info-section {
+    background: white;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-card h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #003049;
+    margin-bottom: 16px;
+}
+
+.info-card p {
+    font-size: 16px;
+    color: #778DA9;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon.facebook {
+    background: #1877F2;
+    color: white;
+}
+
+.social-icon.facebook:hover {
+    background: #145DBF;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(24, 119, 242, 0.4);
+}
+
+.social-icon.instagram {
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+    color: white;
+}
+
+.social-icon.instagram:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(221, 42, 123, 0.4);
+}
+
+.social-icon.twitter {
+    background: #000000;
+    color: white;
+}
+
+.social-icon.twitter:hover {
+    background: #1A1A1A;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.social-icon.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+.social-icon.whatsapp:hover {
+    background: #1EBE56;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+}
+
+.social-icon.gmail {
+    background: #EA4335;
+    color: white;
+}
+
+.social-icon.gmail:hover {
+    background: #D33426;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(234, 67, 53, 0.4);
+}
+
+.social-icon.outlook {
+    background: #0078D4;
+    color: white;
+}
+
+.social-icon.outlook:hover {
+    background: #0063B1;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 120, 212, 0.4);
+}
+
+/* Success Message */
+.success-message {
+    background: #D4EDDA;
+    color: #155724;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #C3E6CB;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.success-message.show {
+    display: block;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .claims-content {
+        grid-template-columns: 1fr;
+    }
+
+    .claims-info-section {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .claims-form-section,
+    .claims-info-section {
+        padding: 24px;
+    }
+
+    .info-card h2 {
+        font-size: 24px;
+    }
+
+    .info-card p {
+        font-size: 14px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .claims-form-section,
+    .claims-info-section {
+        padding: 16px;
+    }
+
+    .btn-submit {
+        width: 100%;
+    }
+}
+
