@@ -96,7 +96,7 @@
 
             setTimeout(() => {
                 if (userType === 'business') {
-                    window.location.href = 'dueno-negocio/home.html';
+                    window.location.href = '../../business-owner/home.html';
                 } else {
                     window.location.href = 'index.html';
                 }
